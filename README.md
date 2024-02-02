@@ -42,7 +42,7 @@ Follow these instructions to set up a local development environment, so you can 
    ```
 
 2. **Create a Virtual Environment**
-   - Navigate to the project directory and create a virtual environment. Replace `[env-name]` with your preferred name for the virtual environment.
+   - Navigate to the project directory and create a virtual environment.
    ```bash
    # For macOS and Linux:
    python3 -m venv venv
