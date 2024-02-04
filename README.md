@@ -1,32 +1,32 @@
 # Aircraft Identifier AI: WWII to Modern Era
 
 ## Introduction
-Welcome to the Aircraft Identifier AI project repository! This project, led by Nam, Nishkarsh, Adam, and Anthony, develops an AI model to identify aircraft in photographs. It's a collaboration with the National Air Force Museum of Canada, inspired by WWII RAF's training methods.
+Welcome to the Aircraft Identifier AI project repository! This project, led by Nam, Nishkarsh, Adam, and Anthony, is a collaboration with the National Air Force Museum of Canada. We're developing an AI model to identify aircraft in photographs, inspired by WWII RAF's training methods using aircraft silhouette playing cards.
 
 ## Project Background
-During WWII, the RAF used aircraft silhouette playing cards for training. We're modernizing this concept with AI, aiding the museum's digitization effort and enhancing public research capabilities.
+Our project modernizes the RAF's WWII training concept by using AI, aiding the museum's digitization effort and enhancing public research capabilities.
 
 ## Current Challenge
-The museum is digitizing its aircraft photo archive, but current search methods are limited and manual. Our AI aims to automate and improve this process.
+As the museum digitizes its aircraft photo archive, we face the challenge of limited and manual search methods. Our AI aims to automate and improve this process.
 
 ## Project Goals
-- Develop an AI model to identify aircraft types in photos.
-- Focus on accurate plane detection, progressing to specific identifications.
+- Develop an AI model to identify various aircraft types in photos.
+- Focus on accurate aircraft detection, progressing to specific identifications.
 - Stretch goal: Extract textual information like aircraft numbers from photos.
 
 ## Research Focus
-We're exploring the number of labeled examples needed for effective training, considering various aircraft angles and perspectives. A key goal is to reduce processing time and enhance accuracy.
+We're investigating the number of labeled examples needed for effective training, considering different aircraft angles and perspectives. Our key goal is to enhance accuracy while reducing processing time.
+
+## Tools Directory
+In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
+- **Image Downloader Tool**: This tool, located at `tools/image_downloader`, facilitates downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes. It's essential for gathering training data for our AI model.
 
 ## Contributing
 Contributions and suggestions are welcome! For inquiries, contact Stephen Adams at [stephen.adams5@mohawkcollege.ca](mailto:stephen.adams5@mohawkcollege.ca).
 
-To include instructions for setting up the virtual environment in your project's README, you can add a section that guides users through the process of cloning the repository, setting up the virtual environment, installing dependencies, and running the project. Here's a suggested addition to your README:
-
----
-
 ## Getting Started
 
-Follow these instructions to set up a local development environment, so you can contribute to the project or simply run it on your own machine.
+To contribute to the project or run it on your own machine, follow these steps to set up a local development environment.
 
 ### Prerequisites
 - Python 3.x
@@ -62,13 +62,13 @@ Follow these instructions to set up a local development environment, so you can 
    ```
 
 4. **Install Dependencies**
-   - Install the project's dependencies using the `requirements.txt` file.
+   - Install the project's dependencies using `requirements.txt`.
    ```bash
    pip install -r requirements.txt
    ```
 
 5. **Deactivate the Virtual Environment**
-   - When you're done working, deactivate the virtual environment.
+   - Deactivate the virtual environment when you're done working.
    ```bash
    deactivate
    ```
