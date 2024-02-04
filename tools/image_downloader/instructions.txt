@@ -1,1 +1,0 @@
-Run image_downloader to use the tool and download files.

@@ -58,7 +58,7 @@ Follow these instructions to set up a local development environment, so you can 
    source venv/bin/activate
 
    # For Windows:
-   .\venv\Scripts\activate
+   ./venv/Scripts/activate
    ```
 
 4. **Install Dependencies**
