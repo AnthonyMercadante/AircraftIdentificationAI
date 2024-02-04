@@ -23,16 +23,16 @@ def PrepareFolders():
     directory. If these files are missing, they are downloaded from predefined URLs.
     """
     # Check if 'dataset' folder exists
-    if os.path.isdir('dataset'):
+    if os.path.isdir('../../dataset'):
         remove = input('You have to remove dataset folder to continue (yes/no): ').lower()
         if remove.startswith('n'):
             exit(0)
 
     # Delete and recreate dataset folders
-    shutil.rmtree('dataset', ignore_errors=True)
-    os.mkdir("dataset")
-    os.mkdir("dataset/images")
-    os.mkdir("dataset/labels")
+    shutil.rmtree('../../dataset', ignore_errors=True)
+    os.mkdir("../../dataset")
+    os.mkdir("../../dataset/images")
+    os.mkdir("../../dataset/labels")
 
     # Define URLs for annotation files
     annotation_files = {

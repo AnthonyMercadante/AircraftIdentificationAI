@@ -1,3 +1,12 @@
+# *************************************************************
+# *                                                           *
+# *    Author: Anthony Mercadante                             *
+# *    Project: image_downloader tool                         *
+# *    Creation Date: February 4, 2024                        *
+# *    Mohawk College Student - Student Number: 000361525     *
+# *                                                           *
+# *************************************************************
+
 import argparse
 import os
 from downloader import download_all_images
@@ -45,7 +54,7 @@ class ExtractData:
                 labels.setdefault(img_id, []).append(bbox_labels)
 
         # Write image IDs to a file for download
-        path_to_img_ids = "dataset/img_ids.txt"
+        path_to_img_ids = "../../dataset/img_ids.txt"
         with open(path_to_img_ids, 'w') as fp:
             for img_id in img_ids:
                 fp.write(f"{self.data_type}/{img_id}\n")
@@ -53,13 +62,13 @@ class ExtractData:
         # Download images using the downloader module
         download_all_images({
             'image_list': path_to_img_ids,
-            'download_folder': "dataset/images",
+            'download_folder': "../../dataset/images",
             'num_processes': 5
         })
 
         # Create labels in YOLOv5 format
         for img_name, classes in labels.items():
-            with open(f"dataset/labels/{img_name}.txt", 'w') as f:
+            with open(f"../../dataset/labels/{img_name}.txt", 'w') as f:
                 for class_label in classes:
                     class_id, *bbox_coords = class_label
                     x, y, w, h = [float(coord) for coord in bbox_coords]
