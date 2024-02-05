@@ -31,8 +31,7 @@ Optional arguments to customize bounding box parameters are set to `2` by defaul
 Run `main.py` to start the download process for the specified classes:
 
 ```bash
-python3 main.py --classes Car Person # Downloads dataset for Car and Person classes
-```
+python3 main.py --classes Aircraft # Downloads dataset for Aircraft class
 
 The script manages the download of necessary files and organizes them in the following directory structure:
 
