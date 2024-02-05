@@ -29,13 +29,37 @@ In the `tools` directory, you'll find various tools developed to assist in the p
 2. **Prepare Data Labels**: Use the **Label Conversion Tool** in `tools/convert_labels_to_indices` to convert class name strings in label files to indices for YOLOv8. Detailed instructions are available in [`ConversionInstructions.md`](tools/convert_labels_to_indices/ConversionInstructions.md).
 3. **Split Dataset**: After generating your dataset, split it into training, validation, and testing sets using the **Split Dataset Tool** in `tools/split_folders`. Follow the instructions in [`split_folders_instructions.md`](tools/split_folders/split_folders_instructions.md) for this process.
 
+## Setting Up NVIDIA CUDA for GPU Acceleration
+To utilize GPU acceleration during model training, follow these steps to set up NVIDIA CUDA:
+
+### Prerequisites for GPU Acceleration
+- An NVIDIA GPU (Ensure your hardware is CUDA-compatible).
+- Updated NVIDIA GPU drivers.
+
+### Install CUDA Toolkit
+1. **Download CUDA Toolkit**: Visit [NVIDIA's CUDA Toolkit website](https://developer.nvidia.com/cuda-downloads) and download the appropriate version for your system.
+2. **Install CUDA Toolkit**: Follow the installation instructions provided by NVIDIA.
+
+### Install cuDNN
+1. **Download cuDNN**: Go to [NVIDIA's cuDNN page](https://developer.nvidia.com/cudnn) and download the cuDNN version compatible with the installed CUDA Toolkit.
+2. **Extract cuDNN Files**: After downloading, extract the cuDNN zip file to a known directory.
+3. **Copy cuDNN Files**: Copy the extracted cuDNN files (from `bin`, `include`, and `lib` directories) into your CUDA Toolkit directory (typically found at `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X` on Windows).
+
+### Verifying CUDA and cuDNN Installation
+1. **Check Environment Variables**: Ensure the CUDA path is correctly set in your system's environment variables.
+2. **Test CUDA Installation**: Use Python or command-line tools to verify that CUDA is recognized and functional.
+
+### Note on GPU Usage
+- The code in this project will default to CPU processing if no compatible GPU is found or if the GPU setup is not configured correctly.
+- For optimal performance and faster training times, setting up CUDA and cuDNN is recommended when using an NVIDIA GPU.
 
 ## Contributing
 Contributions and suggestions are welcome! For inquiries, contact Stephen Adams at [stephen.adams5@mohawkcollege.ca](mailto:stephen.adams5@mohawkcollege.ca).
 
 ## Getting Started
+To contribute to the project or run it on your own
 
-To contribute to the project or run it on your own machine, follow these steps to set up a local development environment.
+ machine, follow these steps to set up a local development environment.
 
 ### Prerequisites
 - Python 3.x
@@ -81,3 +105,4 @@ To contribute to the project or run it on your own machine, follow these steps t
    ```bash
    deactivate
    ```
+---
