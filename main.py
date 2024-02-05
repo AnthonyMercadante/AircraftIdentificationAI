@@ -6,3 +6,6 @@ model = YOLO("yolov8n.yaml")  # build a new model from scratch
 
 # Use the model
 results = model.train(data="config.yaml", epochs=3)  # train the model
+
+# Evaluate model performance on the validation set
+metrics = model.val()
