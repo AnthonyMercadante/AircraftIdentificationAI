@@ -4,4 +4,4 @@ val: ../split_dataset/val # val images (relative to 'path')
 
 # Classes
 names:
-  - Aircraft
+  0: Aircraft
