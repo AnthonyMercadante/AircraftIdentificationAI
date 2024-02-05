@@ -21,7 +21,7 @@ We're investigating the number of labeled examples needed for effective training
 In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
 - **Image Downloader Tool**: Located at `tools/image_downloader`, this tool helps in downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes, essential for gathering training data.
 - **Split Dataset Tool**: Located at `tools/split_folders`, this tool is used for splitting the downloaded dataset into training, validation, and testing sets. It's crucial for preparing the dataset for machine learning model training.
-- **Label Conversion Tool**: Located at `tools/convert_labels_to_indices`, this script is essential for preparing the data labels for YOLOv8. The script converts class name strings in label files to indices. Detailed usage instructions can be found in [`ConversionInstructions.md`](tools/convert_labels_to_indices/ConversionInstructions.md).
+- **Label Conversion Tool**: Located at `tools/convert_labels_to_indices`, this script is essential for preparing the data labels for YOLOv8. The script converts class name strings in label files to indices.
 
 ## Dataset Generation and Preparation
 **Important Note:** The dataset is not included in this repository. To prepare your dataset, follow these steps:
