@@ -1,0 +1,4 @@
+oidv6-train.csv filter=lfs diff=lfs merge=lfs -text
+oidv7-test.csv filter=lfs diff=lfs merge=lfs -text
+oidv7-vaildation.csv filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text

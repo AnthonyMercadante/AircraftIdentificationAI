@@ -40,7 +40,7 @@ class ExtractData:
         # Process each line in the file
         for line in lines:
             info = line.split(',')
-            img_id, class_name, *bbox = info[0], info[2], info[4:8]
+            img_id, class_name, xmin, xmax, ymin, ymax = info[0], info[2], info[4], info[5], info[6], info[7]
             img_params = info[8:]
             img_params[4] = img_params[4][0]
 
@@ -50,8 +50,11 @@ class ExtractData:
             # Add image to the set and update labels if conditions are met
             if class_name in class_names and is_matched:
                 img_ids.add(img_id)
-                bbox_labels = [class_names[class_name], *bbox]
+                bbox_labels = [class_names[class_name], xmin, xmax, ymin, ymax]
                 labels.setdefault(img_id, []).append(bbox_labels)
+
+
+
 
         # Write image IDs to a file for download
         path_to_img_ids = "../../dataset/img_ids.txt"
