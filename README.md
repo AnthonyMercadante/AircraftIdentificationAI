@@ -19,10 +19,13 @@ We're investigating the number of labeled examples needed for effective training
 
 ## Tools Directory
 In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
-- **Image Downloader Tool**: This tool, located at `tools/image_downloader`, facilitates downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes. It's essential for gathering training data for our AI model.
+- **Image Downloader Tool**: Located at `tools/image_downloader`, this tool helps in downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes, essential for gathering training data.
+- **Split Dataset Tool**: Located at `tools/split_folders`, this tool is used for splitting the downloaded dataset into training, validation, and testing sets. It's crucial for preparing the dataset for machine learning model training.
 
-## Dataset Generation
-**Important Note:** The dataset is not included in this repository. You need to generate it on your own using the **Image Downloader Tool** located in `tools/image_downloader`. Please refer to the [`Instructions.md`](tools/image_downloader/Instructions.md) file in that directory to start creating the dataset for your local repository. The repository is configured to ignore the dataset files; however, upon generation, you may need to manually ignore additional dataset files depending on the class you use. For our project, we are using the aircraft dataset.
+## Dataset Generation and Preparation
+**Important Note:** The dataset is not included in this repository. To prepare your dataset, follow these steps:
+1. **Generate Dataset**: Use the **Image Downloader Tool** in `tools/image_downloader`. Refer to [`Instructions.md`](tools/image_downloader/Instructions.md) for guidance on creating your dataset.
+2. **Split Dataset**: After generating your dataset, split it into training, validation, and testing sets using the **Split Dataset Tool** in `tools/split_folders`. Follow the instructions in [`split_folders_instructions.md`](tools/split_folders/split_folders_instructions.md) for this process.
 
 ## Contributing
 Contributions and suggestions are welcome! For inquiries, contact Stephen Adams at [stephen.adams5@mohawkcollege.ca](mailto:stephen.adams5@mohawkcollege.ca).
@@ -75,7 +78,3 @@ To contribute to the project or run it on your own machine, follow these steps t
    ```bash
    deactivate
    ```
-
----
-
-This update provides a direct link to the `Instructions.md` file, making it easier for users to access the necessary information for dataset generation.

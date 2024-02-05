@@ -17,7 +17,7 @@ pip3 install -r requirements.txt  # Install dependencies
 Specify class names for the dataset. The `--classes` argument is required.
 
 **Required Argument:**
-  - `--classes`: Class names to download (e.g., Car, Person).
+  - `--classes`: Class names to download (e.g., Aircraft).
 
 Optional arguments to customize bounding box parameters are set to `2` by default.
 
@@ -32,6 +32,7 @@ Run `main.py` to start the download process for the specified classes:
 
 ```bash
 python3 main.py --classes Aircraft # Downloads dataset for Aircraft class
+```
 
 The script manages the download of necessary files and organizes them in the following directory structure:
 
@@ -58,3 +59,9 @@ root_directory
         │   2fe4f21e409f0a56.txt
         │   ...
 ```
+
+## Next Steps
+
+After you have successfully downloaded and organized your dataset, the next step is to split it into training, validation, and testing sets. This is crucial for preparing your dataset for machine learning model training.
+
+Navigate to the `split_folders` directory and follow the instructions in [`split_folders_instructions.md`](../split_folders/split_folders_instructions.md) to proceed with splitting your dataset into the appropriate subsets.
