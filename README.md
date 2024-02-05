@@ -21,11 +21,14 @@ We're investigating the number of labeled examples needed for effective training
 In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
 - **Image Downloader Tool**: Located at `tools/image_downloader`, this tool helps in downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes, essential for gathering training data.
 - **Split Dataset Tool**: Located at `tools/split_folders`, this tool is used for splitting the downloaded dataset into training, validation, and testing sets. It's crucial for preparing the dataset for machine learning model training.
+- **Label Conversion Tool**: Located at `tools/convert_labels_to_indices`, this script is essential for preparing the data labels for YOLOv8. The script converts class name strings in label files to indices. Detailed usage instructions can be found in [`ConversionInstructions.md`](tools/convert_labels_to_indices/ConversionInstructions.md).
 
 ## Dataset Generation and Preparation
 **Important Note:** The dataset is not included in this repository. To prepare your dataset, follow these steps:
 1. **Generate Dataset**: Use the **Image Downloader Tool** in `tools/image_downloader`. Refer to [`Instructions.md`](tools/image_downloader/Instructions.md) for guidance on creating your dataset.
-2. **Split Dataset**: After generating your dataset, split it into training, validation, and testing sets using the **Split Dataset Tool** in `tools/split_folders`. Follow the instructions in [`split_folders_instructions.md`](tools/split_folders/split_folders_instructions.md) for this process.
+2. **Prepare Data Labels**: Use the **Label Conversion Tool** in `tools/convert_labels_to_indices` to convert class name strings in label files to indices for YOLOv8. Detailed instructions are available in [`ConversionInstructions.md`](tools/convert_labels_to_indices/ConversionInstructions.md).
+3. **Split Dataset**: After generating your dataset, split it into training, validation, and testing sets using the **Split Dataset Tool** in `tools/split_folders`. Follow the instructions in [`split_folders_instructions.md`](tools/split_folders/split_folders_instructions.md) for this process.
+
 
 ## Contributing
 Contributions and suggestions are welcome! For inquiries, contact Stephen Adams at [stephen.adams5@mohawkcollege.ca](mailto:stephen.adams5@mohawkcollege.ca).

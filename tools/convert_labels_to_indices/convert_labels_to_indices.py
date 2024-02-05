@@ -1,7 +1,7 @@
 import os
 
 # Define the directory containing your label files
-label_dir = 'path/to/your/label/files'  # Update this with the path to your label files
+label_dir = '../../dataset/labels'  # Update this with the path to your label files
 
 # Define your class mapping
 class_mapping = {
