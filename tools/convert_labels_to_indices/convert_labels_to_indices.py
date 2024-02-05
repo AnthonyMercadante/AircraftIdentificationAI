@@ -1,7 +1,7 @@
 # *************************************************************
 # *                                                           *
 # *    Author: Anthony Mercadante                             *
-# *    Project: image_downloader tool                         *
+# *    Project: conver_labels_to_indices tool                 *
 # *    Creation Date: February 4, 2024                        *
 # *    Mohawk College Student - Student Number: 000361525     *
 # *                                                           *

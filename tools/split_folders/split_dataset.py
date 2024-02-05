@@ -1,7 +1,7 @@
 # *************************************************************
 # *                                                           *
 # *    Author: Anthony Mercadante                             *
-# *    Project: image_downloader tool                         *
+# *    Project: split_folders tool                            *
 # *    Creation Date: February 4, 2024                        *
 # *    Mohawk College Student - Student Number: 000361525     *
 # *                                                           *
