@@ -1,0 +1,8 @@
+path: A:\Projects\AircraftIdentificationAI\dataset # dataset root directory. (you'll have to change this on your local machine.)
+train: ../split_dataset/train # train images (relative to 'path')
+val: ../split_dataset/val # val images (relative to 'path')
+
+
+# Classes
+names:
+  Aircraft: Aircraft
