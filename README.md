@@ -17,8 +17,6 @@ As the museum digitizes its aircraft photo archive, we face the challenge of lim
 ## Research Focus
 We're investigating the number of labeled examples needed for effective training, considering different aircraft angles and perspectives. Our key goal is to enhance accuracy while reducing processing time.
 
-Certainly! Here's the updated `Tools Directory` section for your README, including the `batch_grayscale_converter` tool:
-
 ## Tools Directory
 In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
 - **Image Downloader Tool**: Located at `tools/image_downloader`, this tool helps in downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes, essential for gathering training data.
