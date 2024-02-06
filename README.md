@@ -17,11 +17,14 @@ As the museum digitizes its aircraft photo archive, we face the challenge of lim
 ## Research Focus
 We're investigating the number of labeled examples needed for effective training, considering different aircraft angles and perspectives. Our key goal is to enhance accuracy while reducing processing time.
 
+Certainly! Here's the updated `Tools Directory` section for your README, including the `batch_grayscale_converter` tool:
+
 ## Tools Directory
 In the `tools` directory, you'll find various tools developed to assist in the project. Currently, it includes:
 - **Image Downloader Tool**: Located at `tools/image_downloader`, this tool helps in downloading a custom dataset from the Open Images Dataset V7 tailored for specific classes, essential for gathering training data.
 - **Split Dataset Tool**: Located at `tools/split_folders`, this tool is used for splitting the downloaded dataset into training, validation, and testing sets. It's crucial for preparing the dataset for machine learning model training.
 - **Label Conversion Tool**: Located at `tools/convert_labels_to_indices`, this script is essential for preparing the data labels for YOLOv8. The script converts class name strings in label files to indices.
+- **Batch Grayscale Converter**: Located at `tools/batch_grayscale_converter`, this Python script is used to convert all images in a specified folder to grayscale. It supports multiple image formats and is useful for preprocessing images for certain types of analysis or model training.
 
 ## Dataset Generation and Preparation
 **Important Note:** The dataset is not included in this repository. To prepare your dataset, follow these steps:
