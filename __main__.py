@@ -8,6 +8,8 @@
 # *************************************************************
 from ultralytics import YOLO
 import torch
+import os
+from PIL import Image
 
 def train_yolo_model():
     """
@@ -36,10 +38,40 @@ def train_yolo_model():
     # The 'config.yaml' should contain the necessary training configurations, including dataset path, 
     # batch size, learning rate, etc.
     results = model.train(data="config.yaml", epochs=300)  # Train the model
+    
+def test_yolo_model(model_path, images_folder):
+    """
+    Tests a YOLO model on a folder of unseen images.
+
+    Args:
+    model_path (str): Path to the trained model.
+    images_folder (str): Directory containing unseen images to test the model on.
+    """
+
+    # Load the trained model without training mode
+    model = YOLO(model_path).eval() # `.eval()` ensures the model is in evaluation mode
+
+    # Iterate over each image in the unseen images directory
+    for image_name in os.listdir(images_folder):
+        image_path = os.path.join(images_folder, image_name)
+        # Load the image
+        image = Image.open(image_path)
+        
+        # Predict using the model
+        results = model.predict(image)
+        
+        # Process the results
+        predictions = results.pred[0]  # Assuming the first element contains predictions
+        
+        # Check if any aircraft was detected
+        aircraft_detected = any(prediction[5] == 0 for prediction in predictions)  # Check if class '0' (Aircraft) is detected
+        
+        print(f"Image: {image_name} - Aircraft Detected: {aircraft_detected}")
 
 # Main Execution
 # Checks if the script is the main program and calls the train_yolo_model function.
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-    train_yolo_model()
+    # train_yolo_model()
+    test_yolo_model('yolov8n.yaml', 'unseen_images/avro_lancaster')
