@@ -6,6 +6,7 @@
 # *    Mohawk College Student - Student Number: 000361525     *
 # *                                                           *
 # *************************************************************
+import ultralytics
 import yaml
 from ultralytics import YOLO
 import torch
@@ -40,6 +41,7 @@ def train_yolo_model():
     # batch size, learning rate, etc.
     results = model.train(data="training-config.yaml", epochs=300)  # Train the model
     
+
 def test_yolo_model(model_path, images_folder, config_file):
     """
     Tests a YOLO model on a folder of unseen images and identifies "Aircraft" (class index 0).
@@ -47,53 +49,47 @@ def test_yolo_model(model_path, images_folder, config_file):
     Args:
         model_path (str): Path to the trained model.
         images_folder (str): Directory containing unseen images to test the model on.
-        config_file (str, optional): Path to the configuration file (defaults to "config.yaml").
+        config_file (str, optional): Path to the configuration file.
     """
 
-    # Load the trained model without training mode
-    model = YOLO(model_path).eval()  # `.eval()` ensures the model is in evaluation mode
+    # Load the trained model
+    model = YOLO(model_path)  # Removed .eval() as it might not be necessary or correct depending on the API
 
-    # Read configuration (if necessary)
+    # Default class index and name for "Aircraft"
+    aircraft_class_index = 0
+    aircraft_class_name = "Aircraft"
+
+    # Read configuration if provided
     if config_file:
         with open(config_file, 'r', encoding='utf-8-sig') as f:
-            config = yaml.safe_load(f) 
-
-            # Access and store relevant configuration data
-            data_path = config['path']
-            train_images_path = os.path.join(data_path, config['train'])
-            val_images_path = os.path.join(data_path, config['val'])
-
-            # Extract class names (assuming index 0 is "Aircraft")
+            config = yaml.safe_load(f)
             class_names = config['names']
-            aircraft_class_index = 0
+            # Use the integer index directly without converting to string
             aircraft_class_name = class_names[aircraft_class_index]
 
-    # Iterate over each image in the unseen images directory
+    # Iterate over images in the folder
     for image_name in os.listdir(images_folder):
         image_path = os.path.join(images_folder, image_name)
-        # Load the image
-        image = Image.open(image_path)
 
-        # Predict using the model
-        results = model(image)
+        # Perform inference and process results
+        results = model(image_path)  # This returns a Results object
 
-        # Process the results
-        predictions = results.pred[0]  # Assuming the first element contains predictions
+        # If results is directly accessible, we may need to iterate or directly access its properties
+        # This assumes 'results' is properly a Results object or a structure you can directly access
+        if hasattr(results, 'pred') and results.pred is not None:
+            detections = results.pred[0]  # Assuming 'pred' contains detection results and is structured accordingly
+            aircraft_detected = False
 
-        # Check if any "Aircraft" was detected
-        aircraft_detected = any(prediction[5] == aircraft_class_index for prediction in predictions)
+            for *box, conf, cls in detections:
+                if cls == aircraft_class_index and conf > 0.25:  # Example confidence threshold
+                    aircraft_detected = True
+                    print(f"Image: {image_name} - Detected {aircraft_class_name} with confidence: {conf:.2f}")
+                    print(f"    Bounding box: {box}")
 
-        # Print results and potentially process detections further
-        print(f"Image: {image_name} - Aircraft Detected: {aircraft_detected}")
-        if aircraft_detected:
-            # Iterate and analyze specific "Aircraft" detections
-            for i in range(len(predictions)):  # Iterate using an index 'i'
-                prediction = predictions[i]
-                if prediction[5] == aircraft_class_index:
-                    bbox = results.xyxy[i]  # Now 'i' has a defined value
-                    confidence = prediction[4]
-                    print(f"  Detected {aircraft_class_name} with confidence: {confidence:.2f}")
-                    print(f"    Bounding box: {bbox}")  # Assuming bbox format (x1, y1, x2, y2)
+            if not aircraft_detected:
+                print(f"Image: {image_name} - No Aircraft Detected")
+
+
 
 
 
@@ -103,4 +99,4 @@ def test_yolo_model(model_path, images_folder, config_file):
 # not when imported as a module in another script.
 if __name__ == '__main__':
     # train_yolo_model()
-    test_yolo_model('yolov8n.yaml', 'unseen_images/avro_lancaster', 'runs/detect/train4/weights/best.pt')
+    test_yolo_model('yolov8n.pt', 'unseen_images/avro_lancaster', 'test-config.yaml')
