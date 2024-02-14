@@ -55,8 +55,8 @@ def test_yolo_model(model_path, images_folder, config_file):
 
     # Read configuration (if necessary)
     if config_file:
-        with open(config_file, 'r') as f:
-            config = yaml.safe_load(f)  # Assuming 'yaml' library is used
+        with open(config_file, 'r', encoding='utf-8') as f:  # Enforce 'utf-8'
+            config = yaml.safe_load(f) 
 
             # Access and store relevant configuration data
             data_path = config['path']
