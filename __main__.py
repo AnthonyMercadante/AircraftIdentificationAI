@@ -6,6 +6,7 @@
 # *    Mohawk College Student - Student Number: 000361525     *
 # *                                                           *
 # *************************************************************
+import yaml
 from ultralytics import YOLO
 import torch
 import os
@@ -39,34 +40,62 @@ def train_yolo_model():
     # batch size, learning rate, etc.
     results = model.train(data="config.yaml", epochs=300)  # Train the model
     
-def test_yolo_model(model_path, images_folder):
+def test_yolo_model(model_path, images_folder, config_file):
     """
-    Tests a YOLO model on a folder of unseen images.
+    Tests a YOLO model on a folder of unseen images and identifies "Aircraft" (class index 0).
 
     Args:
-    model_path (str): Path to the trained model.
-    images_folder (str): Directory containing unseen images to test the model on.
+        model_path (str): Path to the trained model.
+        images_folder (str): Directory containing unseen images to test the model on.
+        config_file (str, optional): Path to the configuration file (defaults to "config.yaml").
     """
 
     # Load the trained model without training mode
-    model = YOLO(model_path).eval() # `.eval()` ensures the model is in evaluation mode
+    model = YOLO(model_path).eval()  # `.eval()` ensures the model is in evaluation mode
+
+    # Read configuration (if necessary)
+    if config_file:
+        with open(config_file, 'r') as f:
+            config = yaml.safe_load(f)  # Assuming 'yaml' library is used
+
+            # Access and store relevant configuration data
+            data_path = config['path']
+            train_images_path = os.path.join(data_path, config['train'])
+            val_images_path = os.path.join(data_path, config['val'])
+
+            # Extract class names (assuming index 0 is "Aircraft")
+            class_names = config['names']
+            aircraft_class_index = 0
+            aircraft_class_name = class_names[aircraft_class_index]
 
     # Iterate over each image in the unseen images directory
     for image_name in os.listdir(images_folder):
         image_path = os.path.join(images_folder, image_name)
         # Load the image
         image = Image.open(image_path)
-        
+
         # Predict using the model
-        results = model.predict(image)
-        
+        results = model(image)
+
         # Process the results
         predictions = results.pred[0]  # Assuming the first element contains predictions
-        
-        # Check if any aircraft was detected
-        aircraft_detected = any(prediction[5] == 0 for prediction in predictions)  # Check if class '0' (Aircraft) is detected
-        
+
+        # Check if any "Aircraft" was detected
+        aircraft_detected = any(prediction[5] == aircraft_class_index for prediction in predictions)
+
+        # Print results and potentially process detections further
         print(f"Image: {image_name} - Aircraft Detected: {aircraft_detected}")
+        if aircraft_detected:
+            # Iterate and analyze specific "Aircraft" detections
+            for i in range(len(predictions)):  # Iterate using an index 'i'
+                prediction = predictions[i]
+                if prediction[5] == aircraft_class_index:
+                    bbox = results.xyxy[i]  # Now 'i' has a defined value
+                    confidence = prediction[4]
+                    print(f"  Detected {aircraft_class_name} with confidence: {confidence:.2f}")
+                    print(f"    Bounding box: {bbox}")  # Assuming bbox format (x1, y1, x2, y2)
+
+
 
 # Main Execution
 # Checks if the script is the main program and calls the train_yolo_model function.
@@ -74,4 +103,4 @@ def test_yolo_model(model_path, images_folder):
 # not when imported as a module in another script.
 if __name__ == '__main__':
     # train_yolo_model()
-    test_yolo_model('yolov8n.yaml', 'unseen_images/avro_lancaster')
+    test_yolo_model('yolov8n.yaml', 'unseen_images/avro_lancaster', 'runs/detect/train4/weights/best.pt')
