@@ -38,7 +38,7 @@ def train_yolo_model():
     # The 'epochs' parameter defines the number of training cycles the model will undergo.
     # The 'config.yaml' should contain the necessary training configurations, including dataset path, 
     # batch size, learning rate, etc.
-    results = model.train(data="config.yaml", epochs=300)  # Train the model
+    results = model.train(data="training-config.yaml", epochs=300)  # Train the model
     
 def test_yolo_model(model_path, images_folder, config_file):
     """
@@ -55,7 +55,7 @@ def test_yolo_model(model_path, images_folder, config_file):
 
     # Read configuration (if necessary)
     if config_file:
-        with open(config_file, 'r', encoding='utf-8') as f:  # Enforce 'utf-8'
+        with open(config_file, 'r', encoding='utf-8-sig') as f:
             config = yaml.safe_load(f) 
 
             # Access and store relevant configuration data
