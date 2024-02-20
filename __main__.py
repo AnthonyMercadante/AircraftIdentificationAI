@@ -23,7 +23,7 @@ def store_bounding_boxes(model_path, images_folder, output_file, output_images_f
     print("Loading model...")
     model = YOLO(model_path)
 
-    aircraft_class_index = 0  # Assuming 'Aircraft' is at index 0
+    aircraft_class_index = 4  # Assuming 'Aircraft' is at index 4
     class_names = None
     if config_file:
         with open(config_file, 'r', encoding='utf-8-sig') as f:
@@ -50,12 +50,13 @@ def store_bounding_boxes(model_path, images_folder, output_file, output_images_f
                 print(f"Failed to load image: {image_path}")
                 continue
 
-            # Adjust this part based on how you perform predictions with your YOLO model
             results = model.predict(image, verbose=False)
 
+            # Assuming results is a list of detection results
             for result in results:
-                boxes = result.boxes.xyxy  # Assuming this is the correct attribute
-                for box, conf, cls in zip(boxes, result.boxes.conf, result.boxes.cls):
+                # Assuming result has the attributes boxes, conf, and cls
+                for box, conf, cls in zip(result.boxes.xyxy, result.boxes.conf, result.boxes.cls):
+                    print(f"Class ID: {int(cls)}, Confidence: {conf.item():.4f}, Class Name: {class_names.get(int(cls), 'Unknown')}")
                     if cls == aircraft_class_index and conf > 0.25:
                         x1, y1, x2, y2 = map(int, box)
                         class_name = class_names[int(cls)] if class_names else "Aircraft"
@@ -69,6 +70,7 @@ def store_bounding_boxes(model_path, images_folder, output_file, output_images_f
                 print(f"Image saved: {output_image_path}")
             else:
                 print(f"Error saving image: {output_image_path}")
+
 
 
 
