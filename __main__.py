@@ -11,59 +11,66 @@ import yaml
 from ultralytics import YOLO
 import torch
 import os
-from PIL import Image
 import csv
+import cv2 
 
-def store_bounding_boxes(model_path, images_folder, output_file, config_file=None):
+def store_bounding_boxes(model_path, images_folder, output_file, output_images_folder, config_file=None):
     """
-    Detects aircraft in an unseen dataset and stores the bounding box data.
-
-    Args:
-        model_path (str): Path to the trained YOLO model.
-        images_folder (str): Directory containing unseen images.
-        output_file (str): Path to store the bounding box data in CSV format.
-        config_file (str, optional): Path to the configuration file.
+    Detects aircraft in an unseen dataset, draws bounding boxes around them, stores bounding 
+    box data in a CSV file, and saves the images with bounding boxes to a specified folder.
     """
 
-    # Model Loading
+    print("Loading model...")
     model = YOLO(model_path)
 
-    # Configuration Management
-    aircraft_class_index = 0  # Assuming 'aircraft' is at index 0 in your model
+    aircraft_class_index = 0  # Assuming 'Aircraft' is at index 0
     class_names = None
     if config_file:
         with open(config_file, 'r', encoding='utf-8-sig') as f:
             config = yaml.safe_load(f)
-            class_names = config['names'] 
+            class_names = config['names']
+            print(f"Class names loaded from config: {class_names}")
 
-    # Output Setup
+    if not os.path.exists(output_images_folder):
+        os.makedirs(output_images_folder)
+        print(f"Created output images folder: {output_images_folder}")
+
     with open(output_file, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(['image_path', 'x1', 'y1', 'x2', 'y2', 'class_name'])
 
-        # Image Processing Loop
         for image_name in os.listdir(images_folder):
             image_path = os.path.join(images_folder, image_name)
+            if not image_path.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
+                continue
 
-            # Model Inference
-            results = model(image_path)
+            print(f"Processing image: {image_path}")
+            image = cv2.imread(image_path)
+            if image is None:
+                print(f"Failed to load image: {image_path}")
+                continue
 
-            # Detection Processing
-            if hasattr(results, 'pred') and results.pred is not None:
-                detections = results.pred[0]
+            # Adjust this part based on how you perform predictions with your YOLO model
+            results = model.predict(image, verbose=False)
 
-                for *box, conf, cls in detections:
+            for result in results:
+                boxes = result.boxes.xyxy  # Assuming this is the correct attribute
+                for box, conf, cls in zip(boxes, result.boxes.conf, result.boxes.cls):
                     if cls == aircraft_class_index and conf > 0.25:
-                        x1, y1, x2, y2 = box.int().tolist()
-                        class_name = class_names[aircraft_class_index] if class_names else "Aircraft"
+                        x1, y1, x2, y2 = map(int, box)
+                        class_name = class_names[int(cls)] if class_names else "Aircraft"
+                        cv2.rectangle(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                        cv2.putText(image, class_name, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+                        csv_writer.writerow([image_path, x1, y1, x2, y2, class_name])
+                        print(f"Bounding box drawn: {x1}, {y1}, {x2}, {y2}, Class: {class_name}")
 
-                        # Debugging prints
-                        print(f"Extracted coordinates: {x1}, {y1}, {x2}, {y2}")  
+            output_image_path = os.path.join(output_images_folder, image_name)
+            if cv2.imwrite(output_image_path, image):
+                print(f"Image saved: {output_image_path}")
+            else:
+                print(f"Error saving image: {output_image_path}")
 
-                        csv_writer.writerow([image_path, x1, y1, x2, y2, class_name]) 
-                    print(f"Image: {image_name}")
-                    print(f"Class Index: {cls}, Confidence: {conf}")
-                    print(f"Bounding Box: {box}")
+
 
 
 def train_yolo_model():
@@ -152,5 +159,6 @@ def test_yolo_model(model_path, images_folder, config_file):
 # not when imported as a module in another script.
 if __name__ == '__main__':
     # train_yolo_model() <-- FOR TRAINING THE MODEL ONLY
-    test_yolo_model('yolov8n.pt', 'unseen_images/avro_lancaster', 'test-config.yaml')
-    store_bounding_boxes('yolov8n.pt', 'unseen_images/', 'bounding_boxes.csv', 'test-config.yaml')
+    # test_yolo_model('yolov8n.pt', 'unseen_images/avro_lancaster', 'test-config.yaml')
+    store_bounding_boxes('yolov8n.pt', 'unseen_images/avro_lancaster', 'bounding_boxes.csv', 'output_images', 'test-config.yaml')
+
