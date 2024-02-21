@@ -11,8 +11,6 @@ import yaml
 from ultralytics import YOLO
 import torch
 import os
-import csv
-import cv2 
 
 def train_yolo_model():
     """
