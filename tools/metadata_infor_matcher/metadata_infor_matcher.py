@@ -3,11 +3,21 @@ File Name: Metadata Information Matcher Script
 Desc: This script matches metadata from the planes Excel sheet to the photos
       We are able to identify each plane by its metadata, as well a description on what each image is
 
+      Done:
+      - Display photo information instead of metadata //done
+      - Fix suffix logic // done
+      - remove duplicates from appearing // done??? double check but should be fixed
+      - attach description to each modified photo (expand array for description section) // done
+
       To-Do:
-      - Display photo information instead of metadata
-      - Fix suffix logic
+      - Dynamically generate sheet names, instead of hardcoding //insert your modifications nam
+      - fix sheet formatting on dates (ensure its all the same) - should be done on excel (should look like 1984.26.51.a-gg)
+      - pickle the metadata dates // ill do that at the end - adam
       - Create a dict for most common words (will help us see what plane names appear frequently)
-      - Dynamically generate sheet names, instead of hardcoding
+      - bonus: store data into it's own individual text file (possible option)
+      - ensure suffix logic works for both upper and lowercase
+      - remove false positives (i.e. 1984.26.8 giving the same description for 1984.26.81 1984.26.82 ...)
+
 
 Authors: Nguyen Quoc Nam Tran, Adam Calleja
 IDs: 000876813, 000862779
@@ -20,6 +30,7 @@ import os
 import pandas as pd
 import re
 
+
 def get_suffix_list(suffix):
     """
     This function creates a list of all the suffix values from the starting to ending value The function will
@@ -31,162 +42,205 @@ def get_suffix_list(suffix):
     - suffix (string): Suffix value used to signify different photos from the same snapshot date
 
     Return:
-    - suffix_list (array): Array of all the suffix values from the start to the end of the suffix
+    - suffix_list (list): List of all the suffix values from the start to the end of the suffix
     """
+
+    # No suffix located
     if not suffix or '-' not in suffix:
         return [suffix]
-    start, end = suffix.split('-')
+
+    # Find the first and last occurrence of '-' to determine the actual range
+    first_dash = suffix.find('-')
+    last_dash = suffix.rfind('-')
+
+    # If there's more than one '-', handle specially, otherwise proceed normally
+    if first_dash != last_dash:
+        # Complex range: take everything up to the first '-' as start, and after the last '-' as end
+        start, end = suffix[:first_dash], suffix[last_dash + 1:]
+    else:
+        # Simple range: split normally
+        start, end = suffix.split('-')
+
     suffix_list = []
-    if len(start) == 1 and len(end) == 1:  # single character range (ex: a-g, a-b)
-        suffix_list = [chr(i) for i in range(ord(start), ord(end) + 1)]
-    elif len(start) == 1 and len(end) == 2:  #start = single value, end = double value (ex: a-gg, a-ab)
-        for i in range(ord(start), ord('z') + 1):
-            suffix_list.append(chr(i))
-        for i in range(ord('a'), ord(end[0]) + 1):
-            for j in range(ord('a'), ord('z') + 1):
-                suffix_list.append(f"{chr(i)}{chr(j)}")
-                if f"{chr(i)}{chr(j)}" == end:
-                    return suffix_list
+    start_index = ord(start[0])
+    end_index = ord(end[0]) if end else start_index  # Handle single character or simple range
+
+    if len(start) == 1 and (len(end) == 1 or not end):
+        # Generate list for single character ranges
+        suffix_list = [chr(i) for i in range(start_index, end_index + 1)]
+    else:
+        # Handle more complex ranges (e.g., a-aa, a-zz)
+        current_char = start
+        while current_char != end:
+            suffix_list.append(current_char)
+            # Logic to increment characters ('a' -> 'b', 'z' -> 'aa', etc.)
+            if len(current_char) == 1:
+                if current_char < 'z':
+                    current_char = chr(ord(current_char) + 1)
+                else:
+                    current_char = 'aa'
+            else:
+                if current_char[1] < 'z':
+                    current_char = current_char[0] + chr(ord(current_char[1]) + 1)
+                else:
+                    if current_char[0] < 'z':
+                        current_char = chr(ord(current_char[0]) + 1) + 'a'
+                    else:
+                        break  # End of range
+        if end:  # Ensure the end of the range is included
+            suffix_list.append(end)
+
     return suffix_list
 
-#Testing logic for making sure suffix works
-#retest with corrected logic
-#test_range = "a-g"
-#suffixes_generated = get_suffix_list(test_range)
-#print(f"Suffixes generated for the range '{test_range}': {suffixes_generated}")
-
-#handling the extended range without causing errors
-#test_range_extended = "a-gg"
-#suffixes_generated_extended = get_suffix_list(test_range_extended)
-#print(f"Suffixes generated for the range '{test_range_extended}': {suffixes_generated_extended}")
 
 def normalize_date_format(date_str):
     """
     This function normalizes the data so that it is processed in uniform
     Ensures that the dates are all separated by .'s, and that we break apart the date with the suffix
-    If no suffix exists for the date, we return back nothing
+    If no suffix exists for the date, we return back a blank suffix
 
     Params:
     date_str (string): Metadata String that we want to format
 
     Return:
-    standardized_date_str (string): Updated and formatted date
-    suffix (string): Suffix that follows the date, blank or letter value
+        Tuple:
+        standardized_date_str (string): Updated and formatted date
+        suffix (string): Suffix that follows the date, blank or letter value
     """
-    standardized_date_str = date_str.replace('-', '.')
-    match = re.match(r'(\d+\.\d+\.\d+)(\s*[a-zA-Z]*-?[a-zA-Z]*)?$', standardized_date_str)
-    if match:
-        numeric_part = match.group(1)  # Date
-        suffix = match.group(2).strip().lower() if match.group(2) else '' # Suffix
-        return numeric_part, suffix
-    else:
-        return standardized_date_str, '' #Date w/ no suffix
+    standardized_date_str = date_str.replace('-', '.').replace(' ', '.')
 
-def find_matches(normalized_date, image_files):
+    # Split the string into parts based on '.'
+    parts = standardized_date_str.split('.')
+
+    # Check if there's more than three parts indicating a suffix exists
+    if len(parts) > 3:
+        numeric_part = '.'.join(parts[:3])  # Join the first three parts as the date
+        suffix = '.'.join(parts[3:])  # Join the remaining parts as the suffix
+    else:
+        numeric_part = standardized_date_str  # The date without a suffix
+        suffix = ''  # No suffix present
+
+    return numeric_part, suffix
+
+
+def create_dates_array(metadata_dates):
     """
-    This function checks if there is a match between the normalized date, and the image files
-    Image file names are normalized to ensure that the metadata and files are the same format
-    If there are matches between the filename and the metadata, it is added to the array and returned back.
+    This function creates an array with all the dates and ensures that all the suffix names are appended to the date
+    Appending the suffix value to the date allows us to search for all images within a suffix range
 
     Params:
-    normalized_date (tuple): information about the normalized date (date/suffix)
-    image_files (array): file names of the aircraft photos
+        metadata_dates (list of tuple): Contains a date, and a description
 
     Returns:
-    matches(array): Any metadata that matches a filename is added to the matches array
-
-
+        all_dates_with_descriptions (dict): Uses dates as keys and descriptions as values
     """
-    date, suffix = normalized_date
-    matches = []
-    for image_filename in image_files:
-        standardized_filename = image_filename.replace('-', '.').lower()
-        file_date, file_suffix = normalize_date_format(standardized_filename)
-
-        # Modify the check to ensure exact match by confirming the match is followed by a non-digit or end of string
-        pattern = f"^{date}([^0-9]|$)"
-        if re.match(pattern, file_date) and (not suffix or suffix == file_suffix):
-            matches.append(image_filename)
-    return matches
+    all_dates_with_descriptions = {}
+    for date_str, description in metadata_dates:
+        base_date, suffix_range = normalize_date_format(date_str)
+        suffixes = get_suffix_list(suffix_range.replace('.', '-')) if suffix_range else ['']
+        for suffix in suffixes:
+            full_date = f"{base_date}{suffix}"
+            all_dates_with_descriptions[full_date] = description
+    return all_dates_with_descriptions
 
 
-def process_sheet(sheet_name):
+def find_matches(generated_dates_with_descriptions, image_folder):
     """
-    This function processes the Excel file and the photo data
-    The file will output where the matches occur, as well as a description of the image if the metadata and image name correlate
+    Used to locate matches between metadata dates and image filenames
+    If a filename is located with metadata, then the image file and description are returned
+    If a filename is located without metadata, then the image file with the word "None" are returned signifying no description
+    Ensures that filenames are not output more than once
 
     Params:
-    sheet_name (csv): Excel sheet with metadata on aircraft
+        generated_dates_with_descriptions (dict): Dates with their descriptions
+        image_folder(string): Path to the folder with the contained image files
+
+    Returns:
+        matched_photos_with_description (list): List of the image file names with its description
+
     """
+    matched_photos_with_descriptions = []
+    matched_filenames = set()  # Track which filenames have already been processed
 
-    # Get the current directory of the script
-    base_path = os.path.dirname(os.path.abspath(__file__))
+    if not os.path.exists(image_folder):
+        print(f"Image folder does not exist: {image_folder}")
+        return matched_photos_with_descriptions
 
-    # Excel file path with a relative path
-    excel_file = os.path.join(base_path, 'NAFMC Photographic Collection.xlsx')
+    image_files = [f for f in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, f))]
 
-    # Load the Excel workbook
-    book = load_workbook(excel_file)
+    for date, description in generated_dates_with_descriptions.items():
+        for filename in image_files:
+            # Check if the date is in the filename and the filename hasn't been processed yet
+            if date in filename.replace('-', '.').lower() and filename not in matched_filenames:
+                matched_photos_with_descriptions.append((filename, description))
+                matched_filenames.add(filename)  # Mark this filename as processed
 
-    # Replace hyphens with spaces in the sheet name
-    correct_sheet_name = sheet_name.replace('-', ' ')
+    # Filenames that haven't matched any description from metadata
+    for filename in image_files:
+        if filename not in matched_filenames:
+            matched_photos_with_descriptions.append((filename, "None"))
 
-    # Get the specified sheet
-    sheet = book[sheet_name]
-
-    # Find the last row with data in column C which 3. We can extend them later.
-    last_row = sheet.max_row
-    while not sheet.cell(row=last_row, column=3).value and last_row > 1:
-        last_row -= 1
-
-    # Path to the folder containing images with a relative path
-    image_folder = os.path.join(base_path, 'Anthony_Nish_Adam_Nguyen_Group', 'NAFMC', correct_sheet_name)
-
-    # Create an empty list to store image filenames
-    image_files = []
-
-    # Iterate through files in the specified image folder
-    for file_name in os.listdir(image_folder):
-
-        # Create the full path by joining the folder path and the file name
-        full_path = os.path.join(image_folder, file_name)
-
-        # Check if the current item in the iteration is correctly a file
-        if os.path.isfile(full_path):
-
-            # If it iss a file then add the filename to the list of image_files
-            image_files.append(file_name)
-
-    # Dictionary to store matches for each date
-    matches_dict = {}
-
-    # Iterate through rows in the specified sheet. Because it starts at row 2 which is not including the title and using enumerate methods.
-    for i, row in enumerate(sheet.iter_rows(min_row=2, max_row=last_row, min_col=3, max_col=4, values_only=True), start=1):
-        date_str, description = str(row[0]), row[1]  # Extract the date string from the tuple
-
-        # Check if the date value is a valid string or timestamp
-        if isinstance(date_str, (str, pd.Timestamp)):
-            normalized_date = normalize_date_format(date_str)
-            matches = find_matches(normalized_date, image_files)
-            if matches:  # If there are matches, store them with their description
-                matches_dict[date_str] = [(match, description) for match in matches]
-            else:
-                print(f"No matches found for date '{date_str}' in Metadata")
-        else:
-            print(f"Invalid date value at row {i}: {date_str}")
+    return matched_photos_with_descriptions
 
 
-    # Print the matches between value in metadata and image files
-    for date_value, matches in matches_dict.items():
-        if matches:
-            print(f"Matches found for date '{date_value}' in Metadata and image files: {matches}")
-        else:
-            print(f"No matches found for date '{date_value}' in Metadata")
+def load_metadata_from_excel(excel_file_path, sheet_name):
+    """
+    Loads the metadata from the Excel sheet, extracting the date and description
 
-# List of sheet names.
+    Params:
+        excel_file_path (string): Path to the Excel file
+        sheet_name (str): Name of sheet to be processed
+
+    Returns:
+        metadata (list): List of tuples containing the date and the description
+    """
+    workbook = load_workbook(excel_file_path)
+    sheet = workbook[sheet_name]
+    metadata = []
+    for row in sheet.iter_rows(min_row=2, min_col=3, max_col=4, values_only=True):
+        date, description = row
+        if date:
+            metadata.append((str(date), description))
+    return metadata
+
+def process_sheet(sheet_name, base_path):
+    """
+    Process a sheet from the Excel file, matching metadata to filenames
+    Output matches between metadata and filenames
+
+    Params:
+        sheet_name (string): Name of the sheet to process
+        base_path (string): Directory path where Excel and image files are located
+
+    """
+    extended_base_path = os.path.join(base_path, 'Anthony_Nish_Adam_Nguyen_Group', 'NAFMC')
+    excel_file = os.path.join(extended_base_path, 'NAFMC Photographic Collection.xlsx')
+
+    metadata = load_metadata_from_excel(excel_file, sheet_name)
+
+    generated_dates_with_descriptions = {}
+    for date_str, description in metadata:
+        base_date, suffix_range = normalize_date_format(date_str)
+        suffixes = get_suffix_list(suffix_range.replace('.', '-')) if suffix_range else ['']
+        for suffix in suffixes:
+            generated_date = f"{base_date}{suffix}"
+            generated_dates_with_descriptions[generated_date] = description
+
+    image_folder = os.path.join(extended_base_path, sheet_name.replace('-', ' '))
+    matched_photos_with_descriptions = find_matches(generated_dates_with_descriptions, image_folder)
+
+    if matched_photos_with_descriptions:
+        print(f"Matches found in sheet '{sheet_name}':")
+        for photo, description in matched_photos_with_descriptions:
+            print(f"{photo} {description}")
+    else:
+        print(f"No matches found in sheet '{sheet_name}'.")
+
+
+#Processing Test
+base_path = os.path.dirname(os.path.abspath(__file__));
+excel_file = os.path.join(base_path, 'NAFMC Photographic Collection.xlsx')
 sheet_names = ['Doc Box 1', 'Doc Box 2', 'Doc Box 6', 'P-Box 1a', 'P-Box 1b', 'P-Box 1c', 'P-Box 1d', 'P-Box 1f']
 
-# Process each sheet
 for sheet_name in sheet_names:
-    print(f"\nProcessing sheet: {sheet_name}")
-    process_sheet(sheet_name)
+    process_sheet(sheet_name, base_path)
