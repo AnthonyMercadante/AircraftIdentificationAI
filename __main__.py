@@ -11,7 +11,6 @@ import yaml
 from ultralytics import YOLO
 import torch
 import os
-from PIL import Image
 
 def train_yolo_model():
     """
@@ -98,5 +97,6 @@ def test_yolo_model(model_path, images_folder, config_file):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-    # train_yolo_model() <-- FOR TRAINING THE MODEL ONLY
-    test_yolo_model('yolov8n.pt', 'unseen_images/avro_lancaster', 'test-config.yaml')
+     # train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+     test_yolo_model('runs/detect/train4/weights/best.pt', 'dataset/unseen_images/avro_lancaster', 'test-config.yaml')
+    
