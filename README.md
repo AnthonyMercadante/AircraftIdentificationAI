@@ -31,7 +31,9 @@ In the `tools` directory, you'll find various tools developed to assist in the p
 
 - **Store Bounding Boxes Tool**: Located at `tools/store_bounding_boxes`, this script processes images in a specified folder, identifies aircraft within these images using a pre-trained YOLO model, and generates corresponding annotation labels. These labels are saved in a format suitable for further training purposes, facilitating the development of more accurate object detection models. This tool is particularly useful for creating annotation labels of unannotated aircraft images for later training purposes.
 
-Each tool is accompanied by a instructions file that provides detailed instructions on how to use it, including any prerequisites, configuration details, and usage examples. Be sure to review these instructions carefully to maximize the effectiveness of each tool in your projects.
+- **Image Format Converter**: Located at `tools/image_format_converter`, this Python script converts image files in a specified directory to a format compatible with OpenCV. It supports a wide range of input image formats and converts them to either PNG or JPEG format, based on user preference. PNG is chosen for its lossless compression, while JPEG is selected for its balance between quality and file size. This tool is crucial for preparing images for computer vision tasks that require specific image formats.
+
+Each tool is accompanied by an instructions file that provides detailed instructions on how to use it, including any prerequisites, configuration details, and usage examples. Be sure to review these instructions carefully to maximize the effectiveness of each tool in your projects.
 
 
 ## Dataset Generation and Preparation
