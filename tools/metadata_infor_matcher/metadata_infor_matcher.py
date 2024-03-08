@@ -27,8 +27,10 @@ Date Created: February 17th, 2024
 import pandas as pd
 from openpyxl import Workbook, load_workbook
 import os
-import pandas as pd
 import re
+# import spacy
+from collections import Counter
+
 
 
 def get_suffix_list(suffix):
@@ -226,6 +228,8 @@ def process_sheet(sheet_name, base_path):
             generated_date = f"{base_date}{suffix}"
             generated_dates_with_descriptions[generated_date] = description
 
+       
+
     image_folder = os.path.join(extended_base_path, sheet_name.replace('-', ' '))
     matched_photos_with_descriptions = find_matches(generated_dates_with_descriptions, image_folder)
 
@@ -237,10 +241,81 @@ def process_sheet(sheet_name, base_path):
         print(f"No matches found in sheet '{sheet_name}'.")
 
 
+# Load spaCy's pre-trained English model
+# nlp = spacy.load("en_core_web_sm")
 #Processing Test
 base_path = os.path.dirname(os.path.abspath(__file__));
 excel_file = os.path.join(base_path, 'NAFMC Photographic Collection.xlsx')
-sheet_names = ['Doc Box 1', 'Doc Box 2', 'Doc Box 6', 'P-Box 1a', 'P-Box 1b', 'P-Box 1c', 'P-Box 1d', 'P-Box 1f']
+workbook = load_workbook(excel_file)
+sheet_names = workbook.sheetnames
 
+
+# Process each sheet
 for sheet_name in sheet_names:
+    print(f"\nProcessing sheet: {sheet_name}")
     process_sheet(sheet_name, base_path)
+
+
+excel_file_aircraft_model = os.path.join(base_path, 'List_of_aircraft_of_Canada_refs_wikipedia.xlsx')
+
+workbook_aircraft_model = load_workbook(excel_file_aircraft_model)
+
+
+# Create a dictionary to store descriptions for each sheet
+all_descriptions = {}
+
+# Iterate through each sheet in the workbook
+for sheet_name in workbook.sheetnames:
+    sheet = workbook[sheet_name]
+
+    #the "Description" column is in column D (column index 4)
+    description_column = sheet['D']
+
+    # Extract all descriptions from the column
+    descriptions = [str(cell.value).lower() for cell in description_column[1:] if cell.value]
+
+    # Store the descriptions in the dictionary with sheet_name as the key
+    all_descriptions[sheet_name] = descriptions
+
+# Create a dictionary of designators and their associated names from the same sheet as aircraft models
+aircraft_models_sheet = workbook_aircraft_model[workbook_aircraft_model.sheetnames[0]]
+designators_sheet = workbook_aircraft_model[workbook_aircraft_model.sheetnames[0]]
+
+aircraft_models = [str(model.value).lower() for model in aircraft_models_sheet['A'][1:] if model.value]
+designator_name_dict = {str(desig.value).lower(): str(name.value) for desig, name in zip(designators_sheet['B'][1:], aircraft_models_sheet['A'][1:]) if desig.value}
+
+# convert to lowercase
+lowercase_designators = [item.lower() for sublist in designators_sheet['B'][1:] for item in str(sublist.value).split()]
+
+print("\nAll Designators:")
+print(lowercase_designators)
+
+# Iterate through all sheets in the all_descriptions dictionary
+for sheet_name, descriptions in all_descriptions.items():
+    print(f"\nSheet: {sheet_name}")
+
+    for description in descriptions:
+        description_lower = description.lower()
+
+        # Check for matches in the aircraft model list from wikipedia
+        matches_aircraft_model = [model for model in aircraft_models if model in description_lower]
+
+        # Check for matches in the designator list from wikipedia
+        matches_designator = [desig for desig in lowercase_designators if desig in description_lower]
+
+        # Print the description along with matching aircraft models and designators
+        if matches_aircraft_model or matches_designator:
+            print(f"\nDescription: {description}")
+            if matches_aircraft_model:
+                print(f"Matches - Aircraft Models: {matches_aircraft_model}")
+            if matches_designator:
+                matching_names = [designator_name_dict[desig] for desig in matches_designator if desig in designator_name_dict]
+                print(f"Matches - Designators: {matches_designator}")
+                print(f"Matching Names: {matching_names}")
+
+
+workbook.close()
+workbook_aircraft_model.close()
+
+
+
