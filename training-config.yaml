@@ -5,3 +5,4 @@ val: ../split_dataset/val # val images (relative to 'path')
 # Classes
 names:
   0: Aircraft
+  1: Avro Lancaster
