@@ -54,7 +54,7 @@ def test_yolo_model(model_path, images_folder, config_file):
     # Load the trained model
     model = YOLO(model_path)  # Removed .eval() as it might not be necessary or correct depending on the API
 
-    # Default class index and name for "Aircraft"
+    # Default class index and name for "Aircraft" & Avro Lancaster
     aircraft_class_index = 0
     aircraft_class_name = "Aircraft"
     avro_lancaster_class_index = 1
