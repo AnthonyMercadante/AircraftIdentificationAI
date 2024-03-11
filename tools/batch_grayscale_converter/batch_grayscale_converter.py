@@ -40,6 +40,6 @@ def grayscale_images_in_folder(folder_path):
 
 if __name__ == "__main__":
     # Example usage: Replace 'your_folder_path' with the actual folder path
-    folder_path = 'your_folder_path'
+    folder_path = 'hawker_hurricane'
     grayscale_images_in_folder(folder_path)
 
