@@ -6,3 +6,5 @@ val: ../split_dataset/val # val images (relative to 'path')
 names:
   0: Aircraft
   1: Avro Lancaster
+  2: Hawker Hurricane
+  

@@ -59,6 +59,8 @@ def test_yolo_model(model_path, images_folder, config_file):
     aircraft_class_name = "Aircraft"
     avro_lancaster_class_index = 1
     avro_lancaster_class_name = "Avro Lancaster"
+    hawker_hurricane_class_index = 2
+    hawker_hurricane_class_name = "Hawker Hurricane"
 
     # Read configuration if provided
     if config_file:
@@ -90,6 +92,9 @@ def test_yolo_model(model_path, images_folder, config_file):
                 elif cls == avro_lancaster_class_index and conf > 0.25:
                     print(f"Image: {image_name} - Detected {avro_lancaster_class_name} with confidence: {conf:.2f}")
                     print(f"    Bounding box: {box}")
+                elif cls == hawker_hurricane_class_index and conf > 0.25:
+                    print(f"Image: {image_name} - Detected {hawker_hurricane_class_name} with confidence: {conf:.2f}")
+                    print(f"    Bounding box: {box}")
 
             if not aircraft_detected:
                 print(f"Image: {image_name} - No Aircraft Detected")
@@ -103,6 +108,6 @@ def test_yolo_model(model_path, images_folder, config_file):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-     train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-     # test_yolo_model('runs/detect/train4/weights/best.pt', 'dataset/unseen_images/avro_lancaster', 'test-config.yaml')
+     #train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+     test_yolo_model('runs/detect/train6/weights/best.pt', 'dataset/unseen_images/hawker_hurricane', 'test-config.yaml')
     
