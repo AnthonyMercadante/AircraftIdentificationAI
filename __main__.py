@@ -31,7 +31,7 @@ def train_yolo_model():
     # Loads a YOLO model defined in 'yolov8n.yaml'.
     # This YAML file should contain the model architecture. You need to specify the correct path
     # and filename according to your model configuration.
-    model = YOLO("yolov8n.yaml")  # Build a new model from scratch
+    model = YOLO("runs/detect/train4/weights/best.pt")  # Build a new model from scratch
 
     # Model Training
     # Starts the training process of the model using the data and configuration specified in 'config.yaml'.
@@ -40,10 +40,22 @@ def train_yolo_model():
     # batch size, learning rate, etc.
     results = model.train(data="training-config.yaml", epochs=300)  # Train the model
     
+    # Saving the Model
+    save_path = 'AircraftIdentificationAI.pth'
+
+    # There are two common ways to save a model in PyTorch:
+    # 1. Save the entire model using `torch.save(model, save_path)`
+    # 2. Save only the state dictionary using `torch.save(model.state_dict(), save_path)`
+
+    # Option 2: Recommended for flexibility
+    torch.save(model.state_dict(), save_path)
+    print(f"Model saved to {save_path}")
+    
 
 def test_yolo_model(model_path, images_folder, config_file):
     """
-    Tests a YOLO model on a folder of unseen images and identifies "Aircraft" (class index 0).
+    Tests a YOLO model on a folder of unseen images to specifically identify "Avro Lancaster"
+    or "Hawker Hurricane" after confirming an object is an "Aircraft".
 
     Args:
         model_path (str): Path to the trained model.
@@ -51,53 +63,42 @@ def test_yolo_model(model_path, images_folder, config_file):
         config_file (str, optional): Path to the configuration file.
     """
 
-    # Load the trained model
-    model = YOLO(model_path)  # Removed .eval() as it might not be necessary or correct depending on the API
-
-    # Default class index and name for "Aircraft" & Avro Lancaster
+    # Initialize the model from the model configuration used during training
+    model = YOLO(model_path)
+    
     aircraft_class_index = 0
-    aircraft_class_name = "Aircraft"
     avro_lancaster_class_index = 1
-    avro_lancaster_class_name = "Avro Lancaster"
     hawker_hurricane_class_index = 2
-    hawker_hurricane_class_name = "Hawker Hurricane"
-
-    # Read configuration if provided
+    
+    # Load class names from config if provided
     if config_file:
         with open(config_file, 'r', encoding='utf-8-sig') as f:
             config = yaml.safe_load(f)
             class_names = config['names']
-            # Use the integer index directly without converting to string
-            aircraft_class_name = class_names[aircraft_class_index]
+    else:
+        # Default class names if config not provided or failed to load
+        class_names = ['Aircraft', 'Avro Lancaster', 'Hawker Hurricane']
 
     # Iterate over images in the folder
     for image_name in os.listdir(images_folder):
         image_path = os.path.join(images_folder, image_name)
-
-        # Perform inference and process results
         results = model(image_path)  # This returns a Results object
 
-        # If results is directly accessible, we may need to iterate or directly access its properties
-        # This assumes 'results' is properly a Results object or a structure you can directly access
         if hasattr(results, 'pred') and results.pred is not None:
-            detections = results.pred[0]  # Assuming 'pred' contains detection results and is structured accordingly
-            aircraft_detected = False
+            detections = results.pred[0]  # Assuming 'pred' contains detection results
+            found_specific_aircraft = False
 
             for *box, conf, cls in detections:
-                # Check for Aircraft
-                if cls == aircraft_class_index and conf > 0.25:
-                    print(f"Image: {image_name} - Detected {aircraft_class_name} with confidence: {conf:.2f}")
+                cls_index = int(cls)  # Ensuring class index is an integer
+                if conf > 0.25 and cls_index in [avro_lancaster_class_index, hawker_hurricane_class_index]:
+                    aircraft_type = class_names[cls_index]
+                    print(f"Image: {image_name} - Detected {aircraft_type} with confidence: {conf:.2f}")
                     print(f"    Bounding box: {box}")
-                # Check for Avro Lancaster
-                elif cls == avro_lancaster_class_index and conf > 0.25:
-                    print(f"Image: {image_name} - Detected {avro_lancaster_class_name} with confidence: {conf:.2f}")
-                    print(f"    Bounding box: {box}")
-                elif cls == hawker_hurricane_class_index and conf > 0.25:
-                    print(f"Image: {image_name} - Detected {hawker_hurricane_class_name} with confidence: {conf:.2f}")
-                    print(f"    Bounding box: {box}")
+                    found_specific_aircraft = True
 
-            if not aircraft_detected:
-                print(f"Image: {image_name} - No Aircraft Detected")
+            if not found_specific_aircraft:
+                print(f"Image: {image_name} - No Avro Lancaster or Hawker Hurricane Detected")
+
 
 
 
@@ -108,6 +109,6 @@ def test_yolo_model(model_path, images_folder, config_file):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-     #train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-     test_yolo_model('runs/detect/train6/weights/best.pt', 'dataset/unseen_images/hawker_hurricane', 'test-config.yaml')
+      train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+     # test_yolo_model('runs/detect/train7/weights/best.pt', 'dataset/images', 'test-config.yaml')
     
