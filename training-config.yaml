@@ -5,6 +5,7 @@ val: ../split_dataset/val # val images (relative to 'path')
 # Classes
 names:
   0: Aircraft
-  1: Avro Lancaster
-  2: Hawker Hurricane
+  1: Jet
+  2: Multi Engine
+  3: Single Engine
   
