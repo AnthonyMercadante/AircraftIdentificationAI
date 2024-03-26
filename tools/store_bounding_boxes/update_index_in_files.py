@@ -10,7 +10,7 @@
 """
 import os
 
-def update_index_in_files(folder_path, new_index=2):
+def update_index_in_files(folder_path, new_index=1):
     """
     Updates the first number in each line of all text files within the specified folder to a new index.
 
