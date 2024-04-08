@@ -35,6 +35,13 @@ In the `tools` directory, you'll find various tools developed to assist in the p
 
 Each tool is accompanied by an instructions file that provides detailed instructions on how to use it, including any prerequisites, configuration details, and usage examples. Be sure to review these instructions carefully to maximize the effectiveness of each tool in your projects.
 
+## Video Tutorial and Demonstration
+
+We've created a detailed video tutorial to guide you through the use of our automation tools and demonstrate the process of model training. One of our team members will walk you through each step, providing insights and tips to help you get the most out of our project's resources.
+
+🎥 **Watch the video here:** [Aircraft Identifier AI Tools and Training Demonstration](https://youtu.be/L8QHCNwK01g?si=VhGtoZ6cUJXfoAq5)
+
+This video is an excellent resource for understanding the practical applications of our tools and the thought process behind our model training methodologies. 
 
 ## Dataset Generation and Preparation
 **Important Note:** The dataset is not included in this repository. To prepare your dataset, follow these steps:
