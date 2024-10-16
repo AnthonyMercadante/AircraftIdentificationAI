@@ -7218,3 +7218,5 @@ split_dataset/val/images/fc45006c825e44eb.jpg
 /dataset/unseen_images/lancaster_renders
 /tools/store_bounding_boxes/output_images (Lancaster Renders)/labels
 /tools/store_bounding_boxes/output_images (Lancaster Renders)
+/dataset/images
+/dataset/labels
