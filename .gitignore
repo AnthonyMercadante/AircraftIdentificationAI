@@ -7216,3 +7216,5 @@ split_dataset/val/images/f750c122dd769426.jpg
 split_dataset/val/images/f820d8ddf8b9226a.jpg
 split_dataset/val/images/fc45006c825e44eb.jpg
 /dataset/unseen_images/lancaster_renders
+/tools/store_bounding_boxes/output_images (Lancaster Renders)/labels
+/tools/store_bounding_boxes/output_images (Lancaster Renders)

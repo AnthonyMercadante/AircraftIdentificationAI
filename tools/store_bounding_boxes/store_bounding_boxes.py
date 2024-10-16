@@ -105,4 +105,4 @@ def store_bounding_boxes(model_path, images_folder, output_file, output_images_f
             print(f"Error saving image: {output_image_path}")
 
 # Example call to the function
-store_bounding_boxes('../../runs/detect/train4/weights/best.pt', '../../dataset/unseen_images/Classifications/Jet', 'bounding_boxes.csv', 'output_images', 'test-config.yaml')
+store_bounding_boxes('../../runs/detect/train4/weights/best.pt', '../../dataset/unseen_images/lancaster_renders', 'bounding_boxes.csv', 'output_images', 'test-config.yaml')
