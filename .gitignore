@@ -7220,3 +7220,6 @@ split_dataset/val/images/fc45006c825e44eb.jpg
 /tools/store_bounding_boxes/output_images (Lancaster Renders)
 /dataset/images
 /dataset/labels
+AircraftIdentificationAI.pth
+/split_dataset
+/split_dataset/test/images
