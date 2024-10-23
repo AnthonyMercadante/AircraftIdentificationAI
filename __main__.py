@@ -110,5 +110,5 @@ def test_yolo_model(model_path, images_folder, config_file):
 # not when imported as a module in another script.
 if __name__ == '__main__':
       train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-     # test_yolo_model('runs/detect/train7/weights/best.pt', 'dataset/images', 'test-config.yaml')
+     # test_yolo_model('runs/detect/train12/weights/best.pt', 'dataset/images', 'test-config.yaml')
     
