@@ -17,7 +17,7 @@ def rename_png_files(folder_path):
 
 if __name__ == '__main__':
     # Manually specify the folder name (replace 'photos' with your folder name)
-    folder_name = 'spitfire_renders'
+    folder_name = 'jet_renders'
     # Get the directory where the script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))
     # Construct the full path to the folder
