@@ -10,6 +10,7 @@ import ultralytics
 import yaml
 from ultralytics import YOLO
 import torch
+import json
 import os
 
 def train_yolo_model():
@@ -52,10 +53,9 @@ def train_yolo_model():
     print(f"Model saved to {save_path}")
     
 
-def test_yolo_model(model_path, images_folder, config_file):
+def test_yolo_model(model_path, images_folder, config_file=None):
     """
-    Tests a YOLO model on a folder of unseen images to specifically identify "Avro Lancaster"
-    or "Hawker Hurricane" after confirming an object is an "Aircraft".
+    Tests a YOLO model on a folder of unseen images and stores the results in a JSON file.
 
     Args:
         model_path (str): Path to the trained model.
@@ -63,41 +63,82 @@ def test_yolo_model(model_path, images_folder, config_file):
         config_file (str, optional): Path to the configuration file.
     """
 
-    # Initialize the model from the model configuration used during training
+     # Initialize the model
     model = YOLO(model_path)
-    
-    aircraft_class_index = 0
-    avro_lancaster_class_index = 1
-    hawker_hurricane_class_index = 2
-    
-    # Load class names from config if provided
+
+    # Load class names from the config file
     if config_file:
         with open(config_file, 'r', encoding='utf-8-sig') as f:
             config = yaml.safe_load(f)
-            class_names = config['names']
+            class_names_dict = config['names']
+            # Convert class names dict to a list where index corresponds to class index
+            class_names = [None] * len(class_names_dict)
+            for key_str, name in class_names_dict.items():
+                index = int(key_str)
+                class_names[index] = name
     else:
-        # Default class names if config not provided or failed to load
-        class_names = ['Aircraft', 'Avro Lancaster', 'Hawker Hurricane']
+        # Default class names if config not provided
+        class_names = ['Aircraft', 'Jet', 'Multi Engine', 'Single Engine']
+
+    # Prepare to collect results
+    results_list = []
+
+    # Define supported image extensions
+    supported_extensions = ('.bmp', '.dng', '.jpeg', '.jpg', '.mpo', '.png', '.tif', '.tiff', '.webp', '.pfm')
 
     # Iterate over images in the folder
     for image_name in os.listdir(images_folder):
         image_path = os.path.join(images_folder, image_name)
-        results = model(image_path)  # This returns a Results object
+        # Check if the file has a supported image extension
+        if image_name.lower().endswith(supported_extensions):
+            try:
+                # Run inference
+                results = model(image_path)
 
-        if hasattr(results, 'pred') and results.pred is not None:
-            detections = results.pred[0]  # Assuming 'pred' contains detection results
-            found_specific_aircraft = False
+                # Process results
+                image_results = {
+                    'image_name': image_name,
+                    'detections': []
+                }
 
-            for *box, conf, cls in detections:
-                cls_index = int(cls)  # Ensuring class index is an integer
-                if conf > 0.25 and cls_index in [avro_lancaster_class_index, hawker_hurricane_class_index]:
-                    aircraft_type = class_names[cls_index]
-                    print(f"Image: {image_name} - Detected {aircraft_type} with confidence: {conf:.2f}")
-                    print(f"    Bounding box: {box}")
-                    found_specific_aircraft = True
+                for result in results:
+                    boxes = result.boxes  # Boxes object for bbox outputs
+                    for box in boxes:
+                        cls_index = int(box.cls.item())
+                        conf = float(box.conf.item())
+                        coords = box.xyxy.tolist()  # [x1, y1, x2, y2]
 
-            if not found_specific_aircraft:
-                print(f"Image: {image_name} - No Avro Lancaster or Hawker Hurricane Detected")
+                        detection = {
+                            'class_index': cls_index,
+                            'class_name': class_names[cls_index],
+                            'confidence': conf,
+                            'bbox': coords  # [x1, y1, x2, y2]
+                        }
+                        image_results['detections'].append(detection)
+
+                # Append image results to the main results list
+                results_list.append(image_results)
+
+                # Optionally, print out detections for this image
+                if image_results['detections']:
+                    print(f"Image: {image_name} - Detections:")
+                    for det in image_results['detections']:
+                        print(f"    Detected {det['class_name']} with confidence {det['confidence']:.2f}")
+                        print(f"        Bounding box: {det['bbox']}")
+                else:
+                    print(f"Image: {image_name} - No detections")
+            except Exception as e:
+                print(f"Error processing image {image_name}: {e}")
+                continue  # Skip this image and continue with the next
+        else:
+            print(f"Skipping file {image_name}: Unsupported file extension")
+            continue  # Skip this file and continue with the next
+
+    # After processing all images, save results to a JSON file
+    output_file = 'test_results.json'
+    with open(output_file, 'w') as f:
+        json.dump(results_list, f, indent=4)
+    print(f"Results saved to {output_file}")
 
 
 
@@ -109,6 +150,6 @@ def test_yolo_model(model_path, images_folder, config_file):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-      train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-     # test_yolo_model('runs/detect/train12/weights/best.pt', 'dataset/images', 'test-config.yaml')
+      #train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+     test_yolo_model('runs/detect/train12/weights/best.pt', 'dataset/unseen_images', 'test-config.yaml')
     
