@@ -9,21 +9,7 @@
     },
     {
         "image_name": "00082968.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3048213720321655,
-                "bbox": [
-                    [
-                        3.5280964374542236,
-                        196.4874725341797,
-                        952.4743041992188,
-                        465.28021240234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0014700_hawker-hurricane-mk1-70-e1507111452256.jpg.jpeg",
@@ -35,21 +21,7 @@
     },
     {
         "image_name": "005.jpg.png",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.28528085350990295,
-                "bbox": [
-                    [
-                        527.5021362304688,
-                        0.0,
-                        1547.22216796875,
-                        797.865234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "01.jpg.jpeg",
@@ -65,21 +37,7 @@
     },
     {
         "image_name": "0231hurricane.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.26901212334632874,
-                "bbox": [
-                    [
-                        103.78890991210938,
-                        274.6382141113281,
-                        1511.950927734375,
-                        723.746337890625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0356218.jpg.jpeg",
@@ -99,21 +57,7 @@
     },
     {
         "image_name": "0431.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.6036854386329651,
-                "bbox": [
-                    [
-                        632.496337890625,
-                        516.256591796875,
-                        2455.06591796875,
-                        1647.109375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0516956.jpg.jpeg",
@@ -121,21 +65,7 @@
     },
     {
         "image_name": "0597763.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4748747944831848,
-                "bbox": [
-                    [
-                        1016.7290649414062,
-                        6.29913330078125,
-                        1600.0,
-                        687.9022216796875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "061921938a4f0ea46bd2db5ee45bcd68.jpg.jpeg",
@@ -151,57 +81,15 @@
     },
     {
         "image_name": "08-08754-us-army-boeing-ch-47f-chinook_PlanespottersNet_1336362_5daa1a0b2b_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3195071220397949,
-                "bbox": [
-                    [
-                        299.5237731933594,
-                        251.30958557128906,
-                        1584.8748779296875,
-                        721.04296875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "08-08762-united-states-army-boeing-ch-47f-chinook_PlanespottersNet_1517538_33528263fb_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3332076668739319,
-                "bbox": [
-                    [
-                        371.63726806640625,
-                        142.8334197998047,
-                        2122.412353515625,
-                        1025.400390625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0837687.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5252301692962646,
-                "bbox": [
-                    [
-                        52.67081832885742,
-                        4.787911891937256,
-                        1095.3123779296875,
-                        743.1953125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0847337.jpg.jpeg",
@@ -217,47 +105,7 @@
     },
     {
         "image_name": "0921685.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5176753997802734,
-                "bbox": [
-                    [
-                        99.86128997802734,
-                        192.76470947265625,
-                        1443.0738525390625,
-                        754.1027221679688
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3296796679496765,
-                "bbox": [
-                    [
-                        0.0,
-                        294.8279113769531,
-                        1363.288330078125,
-                        750.4926147460938
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.25605860352516174,
-                "bbox": [
-                    [
-                        22.02143669128418,
-                        364.6624755859375,
-                        996.9983520507812,
-                        737.6267700195312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "0981857.jpg.jpeg",
@@ -289,57 +137,15 @@
     },
     {
         "image_name": "0eb70b11c8af31746476f4ff70a1be8a--canada-eh-aviation-industry.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26544809341430664,
-                "bbox": [
-                    [
-                        5.44207763671875,
-                        0.0,
-                        529.7827758789062,
-                        141.85415649414062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1-1-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.46176522970199585,
-                "bbox": [
-                    [
-                        143.45547485351562,
-                        65.5110855102539,
-                        1149.4114990234375,
-                        704.2101440429688
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1. Hurricane PZ865 (John Dibbs).jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3252440094947815,
-                "bbox": [
-                    [
-                        110.71388244628906,
-                        32.3375358581543,
-                        1804.271484375,
-                        1064.1771240234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "10-08408-us-army-boeing-ch-47f-chinook_PlanespottersNet_1396100_30ac6142ba_o.jpg.jpeg",
@@ -411,34 +217,7 @@
     },
     {
         "image_name": "109608-d4bc6bd9b02f92fa664a7f99eacb5b40.jpg.webp",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.47651898860931396,
-                "bbox": [
-                    [
-                        241.02394104003906,
-                        48.90179443359375,
-                        288.4554748535156,
-                        65.6676025390625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2953372597694397,
-                "bbox": [
-                    [
-                        1.429381251335144,
-                        129.23585510253906,
-                        205.1591796875,
-                        220.82000732421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "109612-7c93f7db45fcbeb0010dcaa87e31d3a3.jpg.webp",
@@ -494,21 +273,7 @@
     },
     {
         "image_name": "109664-c159b07ef12497cde20887e31bb1f411.jpg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2695544362068176,
-                "bbox": [
-                    [
-                        53.2358512878418,
-                        61.56235885620117,
-                        300.0,
-                        168.73776245117188
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "109665-2c1b912be2b9c4ed502d1a4d28e74997.jpg.webp",
@@ -516,39 +281,11 @@
     },
     {
         "image_name": "109667-8a3a13871330ff70b19b5f9bfc251c3a.jpg.webp",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2756156325340271,
-                "bbox": [
-                    [
-                        175.38375854492188,
-                        53.17121887207031,
-                        272.88519287109375,
-                        80.01399230957031
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "109669-223b49dd1ffbb8be57efc9c4c0b9f693.jpg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3140485882759094,
-                "bbox": [
-                    [
-                        31.301620483398438,
-                        79.26495361328125,
-                        300.0,
-                        229.7655029296875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "109670-95c5dcdd40f98e80049fa9015697f687.jpg.webp",
@@ -572,39 +309,11 @@
     },
     {
         "image_name": "11-08093-us-army-boeing-ch-47f-chinook_PlanespottersNet_1336361_7e5411710f_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26155003905296326,
-                "bbox": [
-                    [
-                        53.153076171875,
-                        239.98695373535156,
-                        1334.131103515625,
-                        786.165283203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "11-08840-us-army-boeing-ch-47f-chinook_PlanespottersNet_1360267_668b8d2738_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2786158621311188,
-                "bbox": [
-                    [
-                        1.671142578125,
-                        236.4896240234375,
-                        920.3231811523438,
-                        531.1532592773438
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1109878.jpg.jpeg",
@@ -616,39 +325,11 @@
     },
     {
         "image_name": "11646440398a5c81011dbab7993c2523.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4180641770362854,
-                "bbox": [
-                    [
-                        40.60588836669922,
-                        300.194580078125,
-                        603.857666015625,
-                        577.5452880859375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "12-08881-us-army-boeing-ch-47f-chinook_PlanespottersNet_1420293_e0b971ef28_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5117771625518799,
-                "bbox": [
-                    [
-                        92.22250366210938,
-                        263.8813781738281,
-                        1387.835205078125,
-                        815.7308959960938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "12-08881-us-army-boeing-ch-47f-chinook_PlanespottersNet_1461432_f4c9961d05_o.jpg.jpeg",
@@ -672,21 +353,7 @@
     },
     {
         "image_name": "13-08132-us-army-boeing-ch-47f-chinook_PlanespottersNet_1489412_d6282b00dd_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3584766089916229,
-                "bbox": [
-                    [
-                        92.87521362304688,
-                        223.2968292236328,
-                        1438.3387451171875,
-                        818.0453491210938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "13-08146-us-army-boeing-ch-47-chinook_PlanespottersNet_1480935_3b3450f770_o.jpg.jpeg",
@@ -706,21 +373,7 @@
     },
     {
         "image_name": "13-08437-us-army-boeing-ch-47-chinook_PlanespottersNet_1169414_2ffc4ba506_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5841241478919983,
-                "bbox": [
-                    [
-                        72.65473937988281,
-                        226.769287109375,
-                        1226.6171875,
-                        705.275634765625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "13-08437-us-army-boeing-ch-47-chinook_PlanespottersNet_1329338_2a8948bdad_o.jpg.jpeg",
@@ -728,21 +381,7 @@
     },
     {
         "image_name": "13-08437-us-army-boeing-ch-47-chinook_PlanespottersNet_1503688_d5931a74e4_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3161209523677826,
-                "bbox": [
-                    [
-                        6.079078674316406,
-                        268.8789367675781,
-                        1348.3880615234375,
-                        751.2527465820312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "13-09432-us-army-boeing-ch-47-chinook_PlanespottersNet_1370615_c6189395af_o.jpg.jpeg",
@@ -750,21 +389,7 @@
     },
     {
         "image_name": "13047961_531205073716991_5071282182233662569_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.28432348370552063,
-                "bbox": [
-                    [
-                        2.2277069091796875,
-                        226.49436950683594,
-                        1263.00732421875,
-                        890.6665649414062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "13055715_531205223716976_54473076345713835_o.jpg.jpeg",
@@ -800,21 +425,7 @@
     },
     {
         "image_name": "14-08167-us-army-boeing-ch-47f-chinook_PlanespottersNet_1365258_a8bc65b6b9_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.36229240894317627,
-                "bbox": [
-                    [
-                        39.72917175292969,
-                        174.7335968017578,
-                        1931.703857421875,
-                        1086.6397705078125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "14-08167-us-army-boeing-ch-47f-chinook_PlanespottersNet_1439366_78cbee034f_o.jpg.jpeg",
@@ -834,34 +445,7 @@
     },
     {
         "image_name": "14-08171-us-army-boeing-ch-47-chinook_PlanespottersNet_1464495_3b4bacedab_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2936289310455322,
-                "bbox": [
-                    [
-                        12.58148193359375,
-                        126.16615295410156,
-                        1446.83447265625,
-                        771.852783203125
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.25254297256469727,
-                "bbox": [
-                    [
-                        148.77548217773438,
-                        183.03977966308594,
-                        1547.8834228515625,
-                        775.41552734375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "14-08444-us-army-boeing-ch-47f-chinook_PlanespottersNet_1431848_a3182ae7b3_o.jpg.jpeg",
@@ -885,39 +469,11 @@
     },
     {
         "image_name": "1434585156318.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2860907316207886,
-                "bbox": [
-                    [
-                        143.97305297851562,
-                        315.10137939453125,
-                        1398.063720703125,
-                        681.6771850585938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1434585156565.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.29755154252052307,
-                "bbox": [
-                    [
-                        165.60775756835938,
-                        219.14968872070312,
-                        1455.8836669921875,
-                        626.2426147460938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "14485857041_727eb4bbdd_b.jpg.jpeg",
@@ -925,21 +481,7 @@
     },
     {
         "image_name": "14487989842_8e097dcb3b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.31621748208999634,
-                "bbox": [
-                    [
-                        4.355144500732422,
-                        100.37555694580078,
-                        419.48681640625,
-                        237.7346954345703
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1496985174_avro_canada_cf_105_arrow_model_airplane_fd17_1657l1_6234.jpg.jpeg",
@@ -947,65 +489,11 @@
     },
     {
         "image_name": "1496985174_avro_canada_cf_105_arrow_model_airplane_fd17_1657l2_6234.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4612690806388855,
-                "bbox": [
-                    [
-                        50.43119430541992,
-                        303.90557861328125,
-                        807.1314697265625,
-                        675.598388671875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2968285083770752,
-                "bbox": [
-                    [
-                        45.154945373535156,
-                        314.46905517578125,
-                        238.98480224609375,
-                        521.5277709960938
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26679107546806335,
-                "bbox": [
-                    [
-                        46.663612365722656,
-                        311.5538635253906,
-                        240.37030029296875,
-                        444.9957580566406
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "15-08176-united-states-army-boeing-ch-47f-chinook_PlanespottersNet_1329339_22f3844f8c_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2977478504180908,
-                "bbox": [
-                    [
-                        11.874370574951172,
-                        82.84590148925781,
-                        1181.582763671875,
-                        639.4390258789062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "15-08178-united-states-army-aviation-boeing-ch-47-chinook_PlanespottersNet_1402616_17f342ba28_o.jpg.jpeg",
@@ -1013,39 +501,11 @@
     },
     {
         "image_name": "15-08192-us-army-boeing-ch-47f-chinook_PlanespottersNet_1469077_b49336ebd7_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2645091712474823,
-                "bbox": [
-                    [
-                        71.55440521240234,
-                        0.0,
-                        1200.0,
-                        689.6118774414062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "150310-F-IO108-020.JPG.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2932114601135254,
-                "bbox": [
-                    [
-                        643.1636962890625,
-                        60.256919860839844,
-                        3600.0,
-                        2337.3193359375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "150310-F-IO108-026.JPG.jpeg",
@@ -1057,34 +517,7 @@
     },
     {
         "image_name": "1558660.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.293514221906662,
-                "bbox": [
-                    [
-                        11.359061241149902,
-                        254.62095642089844,
-                        1078.6956787109375,
-                        620.285888671875
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.26975351572036743,
-                "bbox": [
-                    [
-                        52.04635238647461,
-                        174.92791748046875,
-                        1200.0,
-                        617.8998413085938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1598531.jpg.jpeg",
@@ -1092,21 +525,7 @@
     },
     {
         "image_name": "16-08202-united-states-army-boeing-ch-47f-chinook_PlanespottersNet_1504961_4afa3e7c8f_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.4507353603839874,
-                "bbox": [
-                    [
-                        77.71835327148438,
-                        93.66218566894531,
-                        1564.62158203125,
-                        772.058349609375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "16-08477-united-states-army-aviation-boeing-ch-47f-chinook_PlanespottersNet_1222665_00c4e51b76_o.jpg.jpeg",
@@ -1130,21 +549,7 @@
     },
     {
         "image_name": "182efc1a05a837a290cdcf4849ec0b8e.png.png",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5454674363136292,
-                "bbox": [
-                    [
-                        73.86406707763672,
-                        323.6289978027344,
-                        1268.2972412109375,
-                        982.6857299804688
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "1876538.jpg.jpeg",
@@ -1180,21 +585,7 @@
     },
     {
         "image_name": "1ebcf25bdfe4fd49109a0cb51917fbaf.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28769421577453613,
-                "bbox": [
-                    [
-                        56.888118743896484,
-                        395.8537902832031,
-                        1810.0653076171875,
-                        824.4570922851562
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2005-6566h.jpg.jpeg",
@@ -1214,21 +605,7 @@
     },
     {
         "image_name": "21.A05127A.9.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.27048981189727783,
-                "bbox": [
-                    [
-                        177.8087615966797,
-                        120.39623260498047,
-                        1930.69189453125,
-                        1057.4622802734375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "212976-4dc558132013c30dc51a2b0a16a08751.jpg.jpeg",
@@ -1268,47 +645,7 @@
     },
     {
         "image_name": "22a8e19a21223aca8ada3e8c3cdc8b11--arrow-vehicles.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.4004584550857544,
-                "bbox": [
-                    [
-                        520.1587524414062,
-                        234.640380859375,
-                        715.30859375,
-                        424.6159973144531
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.304378479719162,
-                "bbox": [
-                    [
-                        77.16883850097656,
-                        242.13192749023438,
-                        474.1466979980469,
-                        437.2105407714844
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28917041420936584,
-                "bbox": [
-                    [
-                        234.68386840820312,
-                        234.3694305419922,
-                        481.03082275390625,
-                        448.8697204589844
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2301369.jpg.jpeg",
@@ -1336,21 +673,7 @@
     },
     {
         "image_name": "2508zv-UserView-0.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26412269473075867,
-                "bbox": [
-                    [
-                        184.32693481445312,
-                        156.14337158203125,
-                        1070.449462890625,
-                        434.7410888671875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2508zv-UserView-2.jpg.jpeg",
@@ -1366,127 +689,19 @@
     },
     {
         "image_name": "25952460363_d32e97500c_z.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3401775360107422,
-                "bbox": [
-                    [
-                        29.4976806640625,
-                        76.54556274414062,
-                        628.628173828125,
-                        334.64349365234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "26-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5743961930274963,
-                "bbox": [
-                    [
-                        1082.6478271484375,
-                        753.7759399414062,
-                        1151.853515625,
-                        847.7444458007812
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "26425610670_9daaafc77b_z.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.43091002106666565,
-                "bbox": [
-                    [
-                        111.05206298828125,
-                        100.70028686523438,
-                        592.186767578125,
-                        382.9651794433594
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26856958866119385,
-                "bbox": [
-                    [
-                        111.965087890625,
-                        102.7166748046875,
-                        588.06787109375,
-                        382.6593933105469
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "26594389486_54ce0d2244_z.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.8559409379959106,
-                "bbox": [
-                    [
-                        472.69189453125,
-                        327.2653503417969,
-                        587.4501953125,
-                        395.8982238769531
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5551078915596008,
-                "bbox": [
-                    [
-                        175.70770263671875,
-                        48.912139892578125,
-                        333.49664306640625,
-                        136.14585876464844
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5092648267745972,
-                "bbox": [
-                    [
-                        321.462646484375,
-                        178.84872436523438,
-                        454.586669921875,
-                        262.6200256347656
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4208322763442993,
-                "bbox": [
-                    [
-                        20.276382446289062,
-                        142.82424926757812,
-                        162.23744201660156,
-                        223.92489624023438
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2660605.jpg.jpeg",
@@ -1494,39 +709,11 @@
     },
     {
         "image_name": "26690058501_2b0c6b75a2_c.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3693486154079437,
-                "bbox": [
-                    [
-                        80.77674102783203,
-                        74.73796844482422,
-                        754.962890625,
-                        297.3071594238281
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "26d2e7f2969a9fbc63c541a478878a86.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2608867585659027,
-                "bbox": [
-                    [
-                        880.5601806640625,
-                        379.997314453125,
-                        1035.7864990234375,
-                        573.6820068359375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2783926.jpg.jpeg",
@@ -1538,21 +725,7 @@
     },
     {
         "image_name": "27c93f92c056aa1c3e1f50229214d9ca.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4482175409793854,
-                "bbox": [
-                    [
-                        23.21697998046875,
-                        47.4593620300293,
-                        685.0537719726562,
-                        302.9622497558594
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "28-1.jpg.jpeg",
@@ -1568,70 +741,15 @@
     },
     {
         "image_name": "29443817653_01b3dc3dff_b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.7247073650360107,
-                "bbox": [
-                    [
-                        113.08760070800781,
-                        147.7367706298828,
-                        866.0819702148438,
-                        511.53076171875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2969B.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.360416054725647,
-                "bbox": [
-                    [
-                        330.488037109375,
-                        172.19650268554688,
-                        437.9094543457031,
-                        266.4906921386719
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2969L-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.32492807507514954,
-                "bbox": [
-                    [
-                        15.466925621032715,
-                        136.606201171875,
-                        622.8009643554688,
-                        369.76544189453125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2666867971420288,
-                "bbox": [
-                    [
-                        15.080666542053223,
-                        132.34950256347656,
-                        278.2694396972656,
-                        360.035888671875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2969L-2.jpg.jpeg",
@@ -1639,96 +757,15 @@
     },
     {
         "image_name": "2969L-3.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6163930892944336,
-                "bbox": [
-                    [
-                        549.0921630859375,
-                        298.1444091796875,
-                        729.9066772460938,
-                        444.4966125488281
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "297-3.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7857081890106201,
-                "bbox": [
-                    [
-                        26.292469024658203,
-                        342.9631042480469,
-                        535.2244873046875,
-                        551.71826171875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6624686121940613,
-                "bbox": [
-                    [
-                        27.153722763061523,
-                        340.6531066894531,
-                        789.8004150390625,
-                        557.8692016601562
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6313905119895935,
-                "bbox": [
-                    [
-                        44.67684555053711,
-                        35.902713775634766,
-                        596.4788208007812,
-                        231.76565551757812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.27832162380218506,
-                "bbox": [
-                    [
-                        51.63077926635742,
-                        48.1508903503418,
-                        377.97076416015625,
-                        229.71922302246094
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2a1ff5fd78e5c72119d971fff482f61e.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3074147701263428,
-                "bbox": [
-                    [
-                        16.06601333618164,
-                        355.99761962890625,
-                        4727.02099609375,
-                        2372.55517578125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "2b83b8dce4a99cc1698a0df498986708.jpg.jpeg",
@@ -1740,47 +777,7 @@
     },
     {
         "image_name": "2f42c86790a045c539b10dcb5ed2074a.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5464353561401367,
-                "bbox": [
-                    [
-                        2226.866943359375,
-                        1167.2796630859375,
-                        3599.66650390625,
-                        1832.9267578125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.33479374647140503,
-                "bbox": [
-                    [
-                        682.5010375976562,
-                        374.4536437988281,
-                        2054.760009765625,
-                        1466.8870849609375
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.26792430877685547,
-                "bbox": [
-                    [
-                        2219.534912109375,
-                        1166.6656494140625,
-                        3589.88671875,
-                        1842.3409423828125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "3000x1987-px-aircraft-army-Hawker-Hurricane-World-War-II-1427299.jpg.jpeg",
@@ -1796,21 +793,7 @@
     },
     {
         "image_name": "3178b541c9608fbf2f3c401ae331510b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3358249366283417,
-                "bbox": [
-                    [
-                        46.01125717163086,
-                        107.04009246826172,
-                        1442.76318359375,
-                        865.7069702148438
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "32592_1194476205.jpg.jpeg",
@@ -1818,86 +801,7 @@
     },
     {
         "image_name": "3278f815242337224a32e41703cdf82c.png.png",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7755584716796875,
-                "bbox": [
-                    [
-                        979.3019409179688,
-                        719.3890380859375,
-                        1220.2308349609375,
-                        921.2180786132812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7718908786773682,
-                "bbox": [
-                    [
-                        992.5623779296875,
-                        1049.0120849609375,
-                        1239.6187744140625,
-                        1260.28662109375
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6911922693252563,
-                "bbox": [
-                    [
-                        975.5498046875,
-                        1352.2174072265625,
-                        1236.5709228515625,
-                        1565.1707763671875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.38633081316947937,
-                "bbox": [
-                    [
-                        100.85086059570312,
-                        1672.6895751953125,
-                        1255.1649169921875,
-                        1994.3814697265625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3075699210166931,
-                "bbox": [
-                    [
-                        435.58935546875,
-                        10.41287899017334,
-                        1252.15380859375,
-                        260.3045654296875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28323546051979065,
-                "bbox": [
-                    [
-                        87.54728698730469,
-                        99.96636199951172,
-                        1252.34326171875,
-                        629.11962890625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "33116-48014b.jpg.jpeg",
@@ -1913,21 +817,7 @@
     },
     {
         "image_name": "34138519054_d4e96be201_b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38716185092926025,
-                "bbox": [
-                    [
-                        92.60645294189453,
-                        71.03670501708984,
-                        1023.0,
-                        473.6631774902344
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "34582372880_85316073a8_b.jpg.jpeg",
@@ -1943,65 +833,11 @@
     },
     {
         "image_name": "35815-200-d32040-hawker-hurricane-i-iic-part-14-royal-air-force-over-egypt-final.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.33196040987968445,
-                "bbox": [
-                    [
-                        70.19599151611328,
-                        280.5991516113281,
-                        784.6901245117188,
-                        742.1564331054688
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2545119524002075,
-                "bbox": [
-                    [
-                        65.66685485839844,
-                        283.8306579589844,
-                        780.1134033203125,
-                        935.0742797851562
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "36045-200-d48049-hawker-hurricane-mk.iib-part-5-usaaf-sevice.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31210020184516907,
-                "bbox": [
-                    [
-                        47.56681442260742,
-                        266.8477478027344,
-                        782.6430053710938,
-                        608.585205078125
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2714647650718689,
-                "bbox": [
-                    [
-                        53.05751037597656,
-                        696.5079956054688,
-                        777.7039794921875,
-                        1041.32080078125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "37ca6af2cf6b6be643baec5cea16e287.jpg.jpeg",
@@ -2013,21 +849,7 @@
     },
     {
         "image_name": "3f627fa9b7a643e0b4a8a842bdd11de4.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38239380717277527,
-                "bbox": [
-                    [
-                        150.2032928466797,
-                        271.7709045410156,
-                        955.8051147460938,
-                        557.8876953125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "40131_1162803187.jpg.jpeg",
@@ -2047,21 +869,7 @@
     },
     {
         "image_name": "415919.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31874075531959534,
-                "bbox": [
-                    [
-                        130.64346313476562,
-                        855.2116088867188,
-                        3000.0,
-                        2250.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "432287_big.jpg.jpeg",
@@ -2069,34 +877,7 @@
     },
     {
         "image_name": "4416e61d57b69c499e9840364308427e.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2976519465446472,
-                "bbox": [
-                    [
-                        799.4168090820312,
-                        882.9356079101562,
-                        2462.88623046875,
-                        1443.3780517578125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2556935250759125,
-                "bbox": [
-                    [
-                        763.9052734375,
-                        749.5309448242188,
-                        4357.3935546875,
-                        2051.297119140625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "447105457_d21ec464c9_b.jpg.jpeg",
@@ -2124,47 +905,7 @@
     },
     {
         "image_name": "4634732134d9ba52ec945e72b934bbb1--jeep-hawker-hurricane.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3410787582397461,
-                "bbox": [
-                    [
-                        85.23702239990234,
-                        65.47732543945312,
-                        674.7894897460938,
-                        233.19837951660156
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2825164794921875,
-                "bbox": [
-                    [
-                        86.3882827758789,
-                        74.2722396850586,
-                        327.70684814453125,
-                        231.87359619140625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2501336634159088,
-                "bbox": [
-                    [
-                        87.66059112548828,
-                        72.3073959350586,
-                        428.54901123046875,
-                        232.49232482910156
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "47.png.png",
@@ -2184,21 +925,7 @@
     },
     {
         "image_name": "4fedbef12e23227890e28d93f053787a--battle-of-britain-hawker-hurricane.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38797494769096375,
-                "bbox": [
-                    [
-                        21.721698760986328,
-                        148.84793090820312,
-                        437.93658447265625,
-                        533.8450927734375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "50055141882_0260cd9205_b.jpg.jpeg",
@@ -2218,21 +945,7 @@
     },
     {
         "image_name": "516573055_2a27a845ea_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6576146483421326,
-                "bbox": [
-                    [
-                        691.3201293945312,
-                        327.0855407714844,
-                        799.5584106445312,
-                        411.9914245605469
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "5207757.jpg.jpeg",
@@ -2272,39 +985,11 @@
     },
     {
         "image_name": "5728-back.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.42615875601768494,
-                "bbox": [
-                    [
-                        180.14527893066406,
-                        235.30670166015625,
-                        693.9522094726562,
-                        543.0537719726562
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "5728-scena.png.png",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.39608174562454224,
-                "bbox": [
-                    [
-                        145.26486206054688,
-                        158.01876831054688,
-                        683.510009765625,
-                        561.4195556640625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "5887e04eecb4f151d6c55abfdaeb1638.jpg.jpeg",
@@ -2316,21 +1001,7 @@
     },
     {
         "image_name": "5ecbd6f3ff40e4252dfb5b69b48d50f6.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5030713677406311,
-                "bbox": [
-                    [
-                        55.1202278137207,
-                        85.91019439697266,
-                        1139.3370361328125,
-                        797.2989501953125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "5ed58e393ddf87f726e104920a08cba0.jpg.jpeg",
@@ -2338,21 +1009,7 @@
     },
     {
         "image_name": "5_jtp7-fx.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4227559566497803,
-                "bbox": [
-                    [
-                        237.69287109375,
-                        220.00205993652344,
-                        872.9246215820312,
-                        495.6797790527344
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "6035275.jpg.jpeg",
@@ -2364,52 +1021,11 @@
     },
     {
         "image_name": "6083911.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.44504261016845703,
-                "bbox": [
-                    [
-                        201.23904418945312,
-                        65.45783996582031,
-                        1422.1640625,
-                        1008.867431640625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2886527180671692,
-                "bbox": [
-                    [
-                        206.82395935058594,
-                        175.869140625,
-                        913.081298828125,
-                        1020.0506591796875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "6115285.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.257831871509552,
-                "bbox": [
-                    [
-                        268.895263671875,
-                        228.41665649414062,
-                        1620.0,
-                        835.2255249023438
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "61765_hawker_hurricane_iic.jpg.jpeg",
@@ -2421,65 +1037,11 @@
     },
     {
         "image_name": "640349e4a4d866cac359481e82f7f984.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4340519607067108,
-                "bbox": [
-                    [
-                        53.70769500732422,
-                        783.4108276367188,
-                        684.7435302734375,
-                        961.05859375
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3461320698261261,
-                "bbox": [
-                    [
-                        63.649559020996094,
-                        268.3306579589844,
-                        682.2142333984375,
-                        489.7952880859375
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3291686773300171,
-                "bbox": [
-                    [
-                        63.38300704956055,
-                        91.60575866699219,
-                        680.7711791992188,
-                        274.7856140136719
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "642374.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.33308976888656616,
-                "bbox": [
-                    [
-                        412.7969055175781,
-                        170.33157348632812,
-                        1389.461669921875,
-                        539.2569580078125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "6717_25-3-2019_14-23-15_5_25_CHD_CHINOOK_20.JPG.jpeg",
@@ -2495,21 +1057,7 @@
     },
     {
         "image_name": "6913a850ae573d01ab145334a909bb4d.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.27820536494255066,
-                "bbox": [
-                    [
-                        31.046903610229492,
-                        161.6437225341797,
-                        1078.1092529296875,
-                        613.91259765625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "7189863.jpg.jpeg",
@@ -2517,21 +1065,7 @@
     },
     {
         "image_name": "73120_1134872415.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.28230950236320496,
-                "bbox": [
-                    [
-                        74.97183990478516,
-                        297.72296142578125,
-                        1153.9134521484375,
-                        658.507080078125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "73fa8d8938b840378a606a2457220d9d.jpg.jpeg",
@@ -2545,28 +1079,15 @@
         "image_name": "78031.jpg.jpeg",
         "detections": [
             {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.35975557565689087,
+                "class_index": 3,
+                "class_name": "Single Engine",
+                "confidence": 0.34583956003189087,
                 "bbox": [
                     [
-                        55.10274887084961,
-                        387.2669677734375,
-                        316.3973693847656,
-                        510.8111572265625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3275771141052246,
-                "bbox": [
-                    [
-                        51.058799743652344,
-                        339.8636779785156,
-                        541.3992919921875,
-                        490.6858215332031
+                        66.0688247680664,
+                        398.83966064453125,
+                        324.3468322753906,
+                        515.728271484375
                     ]
                 ]
             }
@@ -2586,21 +1107,7 @@
     },
     {
         "image_name": "7ccec506562c5cdf8dca646037a5093c.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2507474720478058,
-                "bbox": [
-                    [
-                        48.259586334228516,
-                        544.1547241210938,
-                        835.4158325195312,
-                        787.8505249023438
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "7db15dfb511f243c2e6ef99d04a193a5.jpg.jpeg",
@@ -2632,21 +1139,7 @@
     },
     {
         "image_name": "88189-republic-of-singapore-air-force-boeing-ch-47d-chinook_PlanespottersNet_1503692_74e7760fe0_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.4161539375782013,
-                "bbox": [
-                    [
-                        205.6280517578125,
-                        53.84552001953125,
-                        1256.4161376953125,
-                        578.2227783203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "8b9a753ff4ed867dcad9e4b22b8f35f8.jpg.jpeg",
@@ -2654,21 +1147,7 @@
     },
     {
         "image_name": "8d35b7704d3dd491cc3432fe93e98139.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.26047083735466003,
-                "bbox": [
-                    [
-                        134.74180603027344,
-                        399.7254943847656,
-                        2017.794921875,
-                        1140.2796630859375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "8j7u3khtdhw01.jpg.jpeg",
@@ -2684,21 +1163,7 @@
     },
     {
         "image_name": "95528_1160836755.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6268972754478455,
-                "bbox": [
-                    [
-                        923.546142578125,
-                        85.33611297607422,
-                        1557.08154296875,
-                        532.84228515625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "95fbb20927f9928c1c98bc627b72ee7d.jpg.jpeg",
@@ -2706,21 +1171,7 @@
     },
     {
         "image_name": "976007f3b13dac4d79f95d41b7232b77.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.40189114212989807,
-                "bbox": [
-                    [
-                        172.1155242919922,
-                        238.97238159179688,
-                        1674.6846923828125,
-                        753.8093872070312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "97708495deb21451f00ca508e5ae7055.jpg.jpeg",
@@ -2732,65 +1183,11 @@
     },
     {
         "image_name": "9ed6207f20c2645645c84b7eff71f14f.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3132893741130829,
-                "bbox": [
-                    [
-                        443.5331726074219,
-                        427.5673828125,
-                        5349.244140625,
-                        2792.03857421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "a-cutaway-of-a-hawker-hurricane-mk-1-v0-g24if0xeqnm91.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5487883687019348,
-                "bbox": [
-                    [
-                        129.02005004882812,
-                        908.762451171875,
-                        1072.7930908203125,
-                        1889.5543212890625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.36393260955810547,
-                "bbox": [
-                    [
-                        128.1067352294922,
-                        120.6673583984375,
-                        1560.780029296875,
-                        1866.0235595703125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.251189649105072,
-                "bbox": [
-                    [
-                        133.54751586914062,
-                        85.55903625488281,
-                        1134.5001220703125,
-                        1876.3319091796875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "a15-307-australian-army-boeing-ch-47-chinook_PlanespottersNet_1504381_0b9d6791ae_o.jpg.jpeg",
@@ -2814,21 +1211,7 @@
     },
     {
         "image_name": "ae6c67d17b301829b5c8497258072374.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.27554863691329956,
-                "bbox": [
-                    [
-                        102.898681640625,
-                        99.3167724609375,
-                        812.660888671875,
-                        305.65924072265625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "AeroBT-CA_5910_CA_STOCK__CA_5910_R18_CA3_1132_2880x1440.jpg.jpeg",
@@ -2836,21 +1219,7 @@
     },
     {
         "image_name": "AeroBT-CH-47_2_Chinook_Banner_Honeywell-2880x1440.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.41106730699539185,
-                "bbox": [
-                    [
-                        167.99061584472656,
-                        49.19023895263672,
-                        1099.22998046875,
-                        576.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "aeroplane-model-egs-1.jpg.jpeg",
@@ -2886,21 +1255,7 @@
     },
     {
         "image_name": "an-raf-hawker-hurricane-sits-on-a-muddy-russian-airfield-as-hurricanes-B4FY7W.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7345954179763794,
-                "bbox": [
-                    [
-                        193.2630157470703,
-                        190.0506591796875,
-                        361.3426818847656,
-                        255.87210083007812
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "antonis-roen911-karidis-a3.jpg.jpeg",
@@ -2908,34 +1263,7 @@
     },
     {
         "image_name": "Arrow-WM.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.42359450459480286,
-                "bbox": [
-                    [
-                        51.15125274658203,
-                        35.92681121826172,
-                        322.30615234375,
-                        243.8236846923828
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.35596004128456116,
-                "bbox": [
-                    [
-                        48.25436019897461,
-                        212.34451293945312,
-                        318.10589599609375,
-                        334.70367431640625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Arrow135-IMG0084.jpg.jpeg",
@@ -2943,21 +1271,7 @@
     },
     {
         "image_name": "arrow5-superJumbo.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2884417474269867,
-                "bbox": [
-                    [
-                        3.584136962890625,
-                        294.89202880859375,
-                        1444.9403076171875,
-                        699.5046997070312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "arrow72dw_1.jpg.jpeg",
@@ -2985,114 +1299,19 @@
     },
     {
         "image_name": "Avro Canada CF-105 Arrow (3-view).jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5503349900245667,
-                "bbox": [
-                    [
-                        102.42787170410156,
-                        129.45651245117188,
-                        1522.742431640625,
-                        661.8248291015625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4791778326034546,
-                "bbox": [
-                    [
-                        95.92792510986328,
-                        2038.3499755859375,
-                        662.0779418945312,
-                        2320.47900390625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2930041551589966,
-                "bbox": [
-                    [
-                        1617.5670166015625,
-                        94.86483001708984,
-                        3379.609619140625,
-                        693.13916015625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2865178883075714,
-                "bbox": [
-                    [
-                        101.01941680908203,
-                        1474.506103515625,
-                        599.9283447265625,
-                        2031.6839599609375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro-arrow-201-202.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3142341375350952,
-                "bbox": [
-                    [
-                        10.203689575195312,
-                        361.5406799316406,
-                        793.247802734375,
-                        594.611328125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro-arrow.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3593933582305908,
-                "bbox": [
-                    [
-                        402.9294128417969,
-                        161.59214782714844,
-                        1185.9091796875,
-                        572.0184326171875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Avro-Canada-CF-105-Arrow-16.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2590043544769287,
-                "bbox": [
-                    [
-                        59.976078033447266,
-                        0.0,
-                        1200.0,
-                        816.1689453125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Avro-Canada-CF-105-Arrow-17.jpg.jpeg",
@@ -3120,96 +1339,15 @@
     },
     {
         "image_name": "Avro-Canada-CF-105-Arrow-Gambar4-Prokimal-Online-Kotabumi-Lampung-Utara.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.29438549280166626,
-                "bbox": [
-                    [
-                        3.102607488632202,
-                        111.49534606933594,
-                        735.3248291015625,
-                        350.24798583984375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Avro-Canada-CF-105-Arrow-Gambar5-Prokimal-Online-Kotabumi-Lampung-Utara.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.34058263897895813,
-                "bbox": [
-                    [
-                        11.598872184753418,
-                        302.2525634765625,
-                        691.5413208007812,
-                        583.0491943359375
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.311429500579834,
-                "bbox": [
-                    [
-                        39.441829681396484,
-                        228.53810119628906,
-                        1170.861328125,
-                        585.8089599609375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro-canada-cf-105-arrow-il.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7865504622459412,
-                "bbox": [
-                    [
-                        529.6254272460938,
-                        677.145263671875,
-                        821.298095703125,
-                        970.7308959960938
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.39661988615989685,
-                "bbox": [
-                    [
-                        19.753170013427734,
-                        1010.4713134765625,
-                        861.8435668945312,
-                        1279.9964599609375
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2727288007736206,
-                "bbox": [
-                    [
-                        5.024051666259766,
-                        991.155029296875,
-                        1138.7635498046875,
-                        1276.68701171875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro-canada-cf-105-arrow.jpg.jpeg",
@@ -3233,91 +1371,11 @@
     },
     {
         "image_name": "Avro-CF-105-Arrow-il-1200x675.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4327540397644043,
-                "bbox": [
-                    [
-                        99.36681365966797,
-                        433.02587890625,
-                        281.74151611328125,
-                        560.186767578125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.41448771953582764,
-                "bbox": [
-                    [
-                        563.1012573242188,
-                        88.19587707519531,
-                        674.7152099609375,
-                        162.10765075683594
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3842887282371521,
-                "bbox": [
-                    [
-                        224.46250915527344,
-                        147.72483825683594,
-                        407.0729675292969,
-                        397.09124755859375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Avro-CF-105-Arrow-il.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.531907320022583,
-                "bbox": [
-                    [
-                        937.7224731445312,
-                        148.07498168945312,
-                        1125.72265625,
-                        270.2693176269531
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.42398011684417725,
-                "bbox": [
-                    [
-                        164.92770385742188,
-                        718.5339965820312,
-                        470.99127197265625,
-                        934.35888671875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.37712112069129944,
-                "bbox": [
-                    [
-                        373.79168701171875,
-                        245.82766723632812,
-                        680.0272827148438,
-                        662.6219482421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro-cf-c05-canadian-intercepter04.jpg.jpeg",
@@ -3329,21 +1387,7 @@
     },
     {
         "image_name": "avro-cf105-arrow.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5385907888412476,
-                "bbox": [
-                    [
-                        15.240721702575684,
-                        10.992469787597656,
-                        154.24757385253906,
-                        188.72055053710938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "AvroCanadaCF105Arrow.png.png",
@@ -3351,34 +1395,7 @@
     },
     {
         "image_name": "Avro_2BCanada_2BCF-105_2BArrow.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31062811613082886,
-                "bbox": [
-                    [
-                        36.1895751953125,
-                        117.78194427490234,
-                        800.0,
-                        412.346435546875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2684602737426758,
-                "bbox": [
-                    [
-                        7.3305511474609375,
-                        171.40475463867188,
-                        723.88232421875,
-                        412.7708435058594
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Avro_2BCanada_2BCF-105_2BArrow2.jpg.jpeg",
@@ -3400,28 +1417,15 @@
         "image_name": "avro_canada_cf_105a_arrow_by_bagera3005.png.png",
         "detections": [
             {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.45568254590034485,
+                "class_index": 1,
+                "class_name": "Jet",
+                "confidence": 0.28348007798194885,
                 "bbox": [
                     [
-                        363.6741027832031,
-                        2.6116790771484375,
-                        936.6210327148438,
-                        581.3761596679688
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2630443871021271,
-                "bbox": [
-                    [
-                        106.61016082763672,
-                        2.7186310291290283,
-                        944.0,
-                        585.1880493164062
+                        7.085653781890869,
+                        0.3693520724773407,
+                        307.21697998046875,
+                        86.40717315673828
                     ]
                 ]
             }
@@ -3429,65 +1433,11 @@
     },
     {
         "image_name": "avro_canada_cf_105_arrow_2.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3662019670009613,
-                "bbox": [
-                    [
-                        34.59956741333008,
-                        50.1120491027832,
-                        989.0369873046875,
-                        595.8729248046875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.27749669551849365,
-                "bbox": [
-                    [
-                        200.31199645996094,
-                        1305.96142578125,
-                        532.78173828125,
-                        1587.958740234375
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.25398874282836914,
-                "bbox": [
-                    [
-                        1103.99267578125,
-                        100.06156158447266,
-                        3000.0,
-                        1594.4765625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro_canada_cf_105_arrow_by_aircraftfan32849_de8eah2-pre.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2756468653678894,
-                "bbox": [
-                    [
-                        123.39688110351562,
-                        229.51634216308594,
-                        1146.8321533203125,
-                        478.4188232421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro_canada_cf_105_arrow_by_bagera3005.png.png",
@@ -3501,28 +1451,15 @@
         "image_name": "avro_canada_cf_105_arrow_mk__ii_by_karlwjm-d78i3cd.png.png",
         "detections": [
             {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.9668977856636047,
+                "class_index": 2,
+                "class_name": "Multi Engine",
+                "confidence": 0.29872947931289673,
                 "bbox": [
                     [
-                        790.6907348632812,
-                        12.054608345031738,
-                        1014.4022827148438,
-                        158.14427185058594
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.36331096291542053,
-                "bbox": [
-                    [
-                        77.90876770019531,
-                        158.10609436035156,
-                        288.8890380859375,
-                        256.542236328125
+                        777.2760620117188,
+                        1.864233374595642,
+                        1013.0146484375,
+                        259.09326171875
                     ]
                 ]
             }
@@ -3534,61 +1471,21 @@
     },
     {
         "image_name": "avro_canada_cf_105_arrow_mk__ii_by_karlwjm-d78i3to.png.png",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.9228866696357727,
-                "bbox": [
-                    [
-                        792.055908203125,
-                        15.108593940734863,
-                        1015.3316650390625,
-                        171.6687774658203
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6853565573692322,
-                "bbox": [
-                    [
-                        652.8663940429688,
-                        9.395459175109863,
-                        1024.0,
-                        179.1538543701172
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro_canada_cf_105_arrow_mk__ii_by_karlwjm_d78i3cd-fullview.jpg.jpeg",
         "detections": [
             {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.9478940367698669,
+                "class_index": 2,
+                "class_name": "Multi Engine",
+                "confidence": 0.348810613155365,
                 "bbox": [
                     [
-                        791.3571166992188,
-                        8.9788818359375,
-                        1015.3156127929688,
-                        159.0303955078125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2682391405105591,
-                "bbox": [
-                    [
-                        75.0732421875,
-                        155.18276977539062,
-                        289.6624450683594,
-                        260.06988525390625
+                        784.3895874023438,
+                        0.9298340082168579,
+                        1014.1268920898438,
+                        243.568359375
                     ]
                 ]
             }
@@ -3596,78 +1493,11 @@
     },
     {
         "image_name": "avro_canada_cf_105_arrow_model_by_boshart_molder-dbmb1vi.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3065235912799835,
-                "bbox": [
-                    [
-                        59.92168045043945,
-                        122.20654296875,
-                        934.3793334960938,
-                        429.5187683105469
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "avro_canada__cf_105_avro_arrow.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5070533752441406,
-                "bbox": [
-                    [
-                        30.702817916870117,
-                        344.02020263671875,
-                        437.3919677734375,
-                        484.4510803222656
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3512023687362671,
-                "bbox": [
-                    [
-                        410.5174560546875,
-                        3.629404306411743,
-                        495.5277404785156,
-                        68.54972839355469
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3033992350101471,
-                "bbox": [
-                    [
-                        32.21953582763672,
-                        340.00244140625,
-                        614.2012329101562,
-                        485.660400390625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.25931939482688904,
-                "bbox": [
-                    [
-                        404.64569091796875,
-                        79.89892578125,
-                        494.90667724609375,
-                        158.02609252929688
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "b237d09d8ec7f8cbefd02e2c4e47e44a--the-canadian-area-.jpg.jpeg",
@@ -3679,21 +1509,7 @@
     },
     {
         "image_name": "b5c3d195ea4094aba55ebc8531a1550f.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5748299956321716,
-                "bbox": [
-                    [
-                        158.30322265625,
-                        453.7658386230469,
-                        2156.965087890625,
-                        1076.103271484375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "b629e0cace7f2f226c53c023655f241d.jpg.jpeg",
@@ -3705,34 +1521,7 @@
     },
     {
         "image_name": "b97136a9323af698c87462d6c871a0d2.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.28495651483535767,
-                "bbox": [
-                    [
-                        30.724361419677734,
-                        344.1062316894531,
-                        518.9906005859375,
-                        493.6184387207031
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.25827646255493164,
-                "bbox": [
-                    [
-                        35.58821105957031,
-                        17.993244171142578,
-                        551.379638671875,
-                        322.14727783203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "bcb56c7388796d997d66631836fb4d27.jpg.jpeg",
@@ -3756,34 +1545,7 @@
     },
     {
         "image_name": "Boeing+CH-47+Chinook+_25289_2529.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.26405438780784607,
-                "bbox": [
-                    [
-                        36.29322052001953,
-                        153.63893127441406,
-                        569.6002197265625,
-                        453.0207824707031
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2598075866699219,
-                "bbox": [
-                    [
-                        0.0,
-                        639.982421875,
-                        262.13037109375,
-                        746.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "boeing-234-chinook.jpg.jpeg",
@@ -3791,39 +1553,11 @@
     },
     {
         "image_name": "boeing-47-ch-chinook.jpeg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38680484890937805,
-                "bbox": [
-                    [
-                        94.12664794921875,
-                        209.74932861328125,
-                        1884.76708984375,
-                        990.4822998046875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "boeing-ch-47-chinook-01.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2958587408065796,
-                "bbox": [
-                    [
-                        20.82526969909668,
-                        498.4424133300781,
-                        1969.894287109375,
-                        1547.2882080078125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Boeing-CH-47-Chinook-12-1.jpg.jpeg",
@@ -3855,21 +1589,7 @@
     },
     {
         "image_name": "boeing-ch47-chinook-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3703048527240753,
-                "bbox": [
-                    [
-                        98.92034912109375,
-                        203.83621215820312,
-                        1874.7872314453125,
-                        987.072509765625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "boeing-ch47-chinook-2.jpg.jpeg",
@@ -3881,39 +1601,11 @@
     },
     {
         "image_name": "boeing-ch47-chinook-7.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.33190521597862244,
-                "bbox": [
-                    [
-                        1167.575439453125,
-                        9.731348037719727,
-                        1382.9713134765625,
-                        235.74940490722656
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "boeing-chinook-AHXDW5.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38565319776535034,
-                "bbox": [
-                    [
-                        6.390089988708496,
-                        240.77186584472656,
-                        847.1721801757812,
-                        773.8923950195312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Boeing-Chinook-CH-47F.jpg.jpeg",
@@ -3929,34 +1621,7 @@
     },
     {
         "image_name": "boeing-chinook-helicopter-4.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28887972235679626,
-                "bbox": [
-                    [
-                        46.68617630004883,
-                        380.1614990234375,
-                        964.036376953125,
-                        846.8084716796875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28018543124198914,
-                "bbox": [
-                    [
-                        59.8674201965332,
-                        206.59536743164062,
-                        995.2653198242188,
-                        856.5692138671875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "boeing-chinook-helicopter-7.jpg.jpeg",
@@ -4008,21 +1673,7 @@
     },
     {
         "image_name": "Boeing_Chinook_60thAnniversary_Mobile.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.302388459444046,
-                "bbox": [
-                    [
-                        6.557607650756836,
-                        344.70526123046875,
-                        554.9697265625,
-                        597.1137084960938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "c0cfab1b68a7b248825d8869f52e55c5.jpg.jpeg",
@@ -4034,21 +1685,7 @@
     },
     {
         "image_name": "c3f3a206cf655889e767eec5baa211bf.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3349347710609436,
-                "bbox": [
-                    [
-                        0.0,
-                        0.0,
-                        1993.745361328125,
-                        1326.3155517578125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "c49f318500fb63e3adcb8a184c7b5959.jpg.jpeg",
@@ -4068,39 +1705,11 @@
     },
     {
         "image_name": "Ccf105.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.43213513493537903,
-                "bbox": [
-                    [
-                        48.04475402832031,
-                        0.480251282453537,
-                        295.25421142578125,
-                        90.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "cd6ec3c05e84de0b8ef8334b2bc793cf.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3286958634853363,
-                "bbox": [
-                    [
-                        238.8865203857422,
-                        359.7282409667969,
-                        1966.9185791015625,
-                        893.7589111328125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "cefd220229c8ea92e57b5b3430b6afe9.jpg.jpeg",
@@ -4116,83 +1725,15 @@
     },
     {
         "image_name": "cf-105-2.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.8669816851615906,
-                "bbox": [
-                    [
-                        1465.0133056640625,
-                        836.0866088867188,
-                        2040.4488525390625,
-                        1265.28759765625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "CF-105-Arrow-il.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4850234091281891,
-                "bbox": [
-                    [
-                        48.37541580200195,
-                        190.53521728515625,
-                        1039.602783203125,
-                        749.5462036132812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4162697196006775,
-                "bbox": [
-                    [
-                        47.08719253540039,
-                        195.26414489746094,
-                        1037.609375,
-                        1000.3480834960938
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.35302066802978516,
-                "bbox": [
-                    [
-                        57.755374908447266,
-                        185.8916473388672,
-                        717.5433959960938,
-                        737.50732421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "cf-105-image01.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.7198105454444885,
-                "bbox": [
-                    [
-                        575.6084594726562,
-                        310.4891662597656,
-                        783.3697509765625,
-                        480.7490539550781
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "CF-105.jpg.jpeg",
@@ -4204,21 +1745,7 @@
     },
     {
         "image_name": "cf-105_01.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3190300166606903,
-                "bbox": [
-                    [
-                        100.8147964477539,
-                        97.55353546142578,
-                        622.875,
-                        297.06689453125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "cf-105_04.jpg.jpeg",
@@ -4226,21 +1753,7 @@
     },
     {
         "image_name": "cf105-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3196030259132385,
-                "bbox": [
-                    [
-                        44.99759292602539,
-                        62.64398193359375,
-                        594.52392578125,
-                        257.1855163574219
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "CF105-cockpit.jpg.jpeg",
@@ -4252,21 +1765,7 @@
     },
     {
         "image_name": "cf105_12.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31934159994125366,
-                "bbox": [
-                    [
-                        41.637413024902344,
-                        79.29662322998047,
-                        513.5867309570312,
-                        268.1923828125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "CH-47-Chinook-Helicopter.jpg.jpeg",
@@ -4290,21 +1789,7 @@
     },
     {
         "image_name": "CH-47F_Redstone.JPG.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.36251047253608704,
-                "bbox": [
-                    [
-                        2.1112060546875,
-                        0.0,
-                        1555.09423828125,
-                        1037.374267578125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "CH-47_2BChinook_2BHelicopter_2B-_2BPDA.jpg.jpeg",
@@ -4348,34 +1833,7 @@
     },
     {
         "image_name": "chinook-falklands-4.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.36491653323173523,
-                "bbox": [
-                    [
-                        239.675537109375,
-                        461.7309265136719,
-                        1110.3533935546875,
-                        775.8749389648438
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.30341553688049316,
-                "bbox": [
-                    [
-                        228.50343322753906,
-                        88.42513275146484,
-                        1094.243408203125,
-                        369.09429931640625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Chinook-highres.jpg.jpeg",
@@ -4395,21 +1853,7 @@
     },
     {
         "image_name": "Chinook.ch-47d.d-101.rnethaf.arp.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.275722861289978,
-                "bbox": [
-                    [
-                        285.74566650390625,
-                        286.63165283203125,
-                        2418.19189453125,
-                        1444.0985107421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "chinook.jpg.jpeg",
@@ -4429,21 +1873,7 @@
     },
     {
         "image_name": "Chinook_hc2_za682_arp.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31149783730506897,
-                "bbox": [
-                    [
-                        101.29756164550781,
-                        264.4718322753906,
-                        2036.81396484375,
-                        1226.7835693359375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "ch_47_gallery_lrg_07_960.jpg.jpeg",
@@ -4463,21 +1893,7 @@
     },
     {
         "image_name": "CMB_1010-Web-Warbird-Aviation.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5529050230979919,
-                "bbox": [
-                    [
-                        69.60980987548828,
-                        43.63994598388672,
-                        809.0967407226562,
-                        625.1954956054688
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "cockpit-of-us-army-chinook-helicopter-ft-campbell-tnky-BPYCG7.jpg.jpeg",
@@ -4493,117 +1909,11 @@
     },
     {
         "image_name": "d9tdhf8-258cccac-72fb-4d24-9a3d-36223573c718.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6256507039070129,
-                "bbox": [
-                    [
-                        222.30947875976562,
-                        281.9033508300781,
-                        342.3730163574219,
-                        406.2611083984375
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.34405773878097534,
-                "bbox": [
-                    [
-                        10.458029747009277,
-                        414.91729736328125,
-                        356.2608337402344,
-                        536.1809692382812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3165897727012634,
-                "bbox": [
-                    [
-                        5.26493501663208,
-                        402.0941467285156,
-                        493.3319396972656,
-                        535.1887817382812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2608442008495331,
-                "bbox": [
-                    [
-                        8.863414764404297,
-                        283.7203369140625,
-                        476.7638244628906,
-                        537.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "dacb42481bbd4c3d5f41f8516d5a96de.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4155336916446686,
-                "bbox": [
-                    [
-                        12.64805793762207,
-                        545.9320068359375,
-                        316.3287048339844,
-                        619.6611328125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3996390998363495,
-                "bbox": [
-                    [
-                        12.052059173583984,
-                        199.35984802246094,
-                        744.2242431640625,
-                        444.6856994628906
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.380422979593277,
-                "bbox": [
-                    [
-                        12.018489837646484,
-                        208.7857666015625,
-                        554.376953125,
-                        439.45458984375
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.33362656831741333,
-                "bbox": [
-                    [
-                        192.1948699951172,
-                        164.12696838378906,
-                        989.3336181640625,
-                        439.1966857910156
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "deb5f5c68009edf1563f8a052bb8444e.jpg.jpeg",
@@ -4615,21 +1925,7 @@
     },
     {
         "image_name": "desktop-wallpaper-avro-canada-cf-105-arrow-cf-105-canada-arrow-military-plane-aircraft-avro.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.377647340297699,
-                "bbox": [
-                    [
-                        117.26782989501953,
-                        94.11797332763672,
-                        802.6223754882812,
-                        357.7519226074219
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "DSC06688-Hawker-Hurricane-FMS-BAPC.68-P2725-TM-B-RAF.jpg.jpeg",
@@ -4653,83 +1949,15 @@
     },
     {
         "image_name": "e2ae4ecdb19fff8a75b24b306f90ea71.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.27207958698272705,
-                "bbox": [
-                    [
-                        335.26953125,
-                        63.45069885253906,
-                        636.078125,
-                        189.76416015625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "e31154a2792eaa91d5a65119e7aaa6cf.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3517369329929352,
-                "bbox": [
-                    [
-                        17.490554809570312,
-                        165.94906616210938,
-                        727.657958984375,
-                        360.92474365234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "e3231a7ceb9aabbb28c8878b170f22db.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.4841599762439728,
-                "bbox": [
-                    [
-                        5.82623291015625,
-                        228.3424835205078,
-                        531.7440795898438,
-                        387.54986572265625
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.41749274730682373,
-                "bbox": [
-                    [
-                        0.583953857421875,
-                        232.12728881835938,
-                        337.6411437988281,
-                        386.4427185058594
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3387853801250458,
-                "bbox": [
-                    [
-                        0.043701171875,
-                        27.980270385742188,
-                        206.99343872070312,
-                        185.7769317626953
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "e3f36d7f3767515d700b3ceca84c000d.jpg.jpeg",
@@ -4753,70 +1981,15 @@
     },
     {
         "image_name": "Exploring-About-the-Boeing-Chinook-UK-variants-2048x1151.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2977754473686218,
-                "bbox": [
-                    [
-                        1554.5506591796875,
-                        272.4983825683594,
-                        2031.1390380859375,
-                        657.6534423828125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "F-AZXR_2.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.374953955411911,
-                "bbox": [
-                    [
-                        73.2440414428711,
-                        207.79734802246094,
-                        1866.0,
-                        928.474365234375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "f19d9e9412e8a858ef7c026308919fa1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.9655999541282654,
-                "bbox": [
-                    [
-                        381.2032165527344,
-                        842.5675048828125,
-                        600.9161987304688,
-                        936.45654296875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6088651418685913,
-                "bbox": [
-                    [
-                        26.51966667175293,
-                        4.870901584625244,
-                        772.246826171875,
-                        264.2511901855469
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "f20c20511a69128a98260999041b7a47.jpg.jpeg",
@@ -4832,21 +2005,7 @@
     },
     {
         "image_name": "f7a0832068d3372fe35af9265ab5b591.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2889034152030945,
-                "bbox": [
-                    [
-                        119.94991302490234,
-                        98.07660675048828,
-                        736.0,
-                        377.5873107910156
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "f7bcece4e6a2841c74e22f498a3191a7.jpg.jpeg",
@@ -4858,21 +2017,7 @@
     },
     {
         "image_name": "fefad0ed5c3fd8151388bf960caba763.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2894010841846466,
-                "bbox": [
-                    [
-                        9.870010375976562,
-                        133.3186492919922,
-                        607.4188232421875,
-                        441.4170837402344
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "fg_3725071-jdw-7996.jpg.jpeg",
@@ -4908,34 +2053,7 @@
     },
     {
         "image_name": "Guillows-506-Hawker-Hurricane-600x600.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.357883483171463,
-                "bbox": [
-                    [
-                        188.41969299316406,
-                        220.14981079101562,
-                        594.7699584960938,
-                        363.40460205078125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3552180528640747,
-                "bbox": [
-                    [
-                        190.5824737548828,
-                        218.78512573242188,
-                        600.0,
-                        358.6073303222656
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "h47d_00240.jpg.jpeg",
@@ -4943,57 +2061,15 @@
     },
     {
         "image_name": "HA8654-1-48-scale-diecast-model-Hawker-Hurricane-Mk-IIC-JX-Q-MacLachlan-1-Sqn-RAF-fs.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5584255456924438,
-                "bbox": [
-                    [
-                        240.91806030273438,
-                        171.92794799804688,
-                        1301.92041015625,
-                        712.3158569335938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-1-D896NJ.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.25412529706954956,
-                "bbox": [
-                    [
-                        94.05131530761719,
-                        212.57078552246094,
-                        1207.2626953125,
-                        636.3863525390625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.36029231548309326,
-                "bbox": [
-                    [
-                        56.5647087097168,
-                        40.95038986206055,
-                        594.8030395507812,
-                        301.0460510253906
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-2F2AG01.jpg.jpeg",
@@ -5001,21 +2077,7 @@
     },
     {
         "image_name": "hawker-hurricane-4087113_1280.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5983399152755737,
-                "bbox": [
-                    [
-                        491.09381103515625,
-                        327.70458984375,
-                        720.6033325195312,
-                        614.57763671875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-44565-1920x1080.jpg.jpeg",
@@ -5023,93 +2085,23 @@
     },
     {
         "image_name": "hawker-hurricane-56a61c4c3df78cf7728b6491.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2997678518295288,
-                "bbox": [
-                    [
-                        8.719711303710938,
-                        413.2389831542969,
-                        1611.112060546875,
-                        971.706298828125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-A9DTJ3.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3218729496002197,
-                "bbox": [
-                    [
-                        194.95648193359375,
-                        152.05575561523438,
-                        953.5576782226562,
-                        514.0352783203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker-Hurricane-against-Japan-scaled.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.41428086161613464,
-                "bbox": [
-                    [
-                        28.430908203125,
-                        118.083984375,
-                        1629.703369140625,
-                        956.970947265625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-aircraft-rear-view-duxfield-airfield-england-31998123.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.30137568712234497,
-                "bbox": [
-                    [
-                        300.84014892578125,
-                        10.679473876953125,
-                        1597.128173828125,
-                        1003.9061279296875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-banking-right-ww-fighter-fly-184999067.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3558795154094696,
-                "bbox": [
-                    [
-                        84.94865417480469,
-                        177.03976440429688,
-                        1104.551513671875,
-                        625.7384033203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-britanskii-odnomestnyi-istrebitel-antonis-r.jpg.webp",
@@ -5117,70 +2109,15 @@
     },
     {
         "image_name": "hawker-hurricane-climbing-at-duxford-airshow-E19BXR.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2692449986934662,
-                "bbox": [
-                    [
-                        168.102294921875,
-                        168.62393188476562,
-                        1177.4075927734375,
-                        692.2249145507812
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2573474645614624,
-                "bbox": [
-                    [
-                        163.5184783935547,
-                        183.411376953125,
-                        1097.61767578125,
-                        684.5681762695312
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker-Hurricane-cutaway-1536x1187.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5637783408164978,
-                "bbox": [
-                    [
-                        34.45547103881836,
-                        219.89129638671875,
-                        1375.930419921875,
-                        894.6377563476562
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker-Hurricane-cutaway-scaled.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.5965986847877502,
-                "bbox": [
-                    [
-                        57.97900390625,
-                        369.639892578125,
-                        2291.84375,
-                        1487.511962890625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-i-r4118-FG0A7D.jpg.jpeg",
@@ -5240,57 +2177,15 @@
     },
     {
         "image_name": "hawker-hurricane-in-flight-2DHAR6X.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.25469186902046204,
-                "bbox": [
-                    [
-                        283.63214111328125,
-                        328.561767578125,
-                        883.008544921875,
-                        539.79345703125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-in-flight.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2906765639781952,
-                "bbox": [
-                    [
-                        124.33349609375,
-                        89.05120849609375,
-                        1547.5745849609375,
-                        943.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-in-top-view-2DP5GJP.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.36310240626335144,
-                "bbox": [
-                    [
-                        384.9360656738281,
-                        849.5255126953125,
-                        513.9749145507812,
-                        1080.8876953125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker-Hurricane-IV-RAF-BP172-April-1943-IWM-MH4943.jpg.jpeg",
@@ -5306,39 +2201,11 @@
     },
     {
         "image_name": "hawker-hurricane-mk-i-messerschmitt-bf-109e-4-bitva-za-brita.jpg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3566785752773285,
-                "bbox": [
-                    [
-                        54.77228927612305,
-                        101.58980560302734,
-                        1315.9853515625,
-                        757.4727783203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-mk.1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2726415991783142,
-                "bbox": [
-                    [
-                        317.93792724609375,
-                        328.9150085449219,
-                        1741.618408203125,
-                        954.3807373046875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker-Hurricane-Mk.II-Z3427-AV-R.jpg.jpeg",
@@ -5358,21 +2225,7 @@
     },
     {
         "image_name": "hawker-hurricane-pair-FBAXJ3.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.29930007457733154,
-                "bbox": [
-                    [
-                        267.5517272949219,
-                        322.3105773925781,
-                        1133.0841064453125,
-                        736.76416015625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-prototype-k5083-in-the-air-2M96XM4.jpg.jpeg",
@@ -5384,21 +2237,7 @@
     },
     {
         "image_name": "hawker-hurricane-r4118-H8J714.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6782115697860718,
-                "bbox": [
-                    [
-                        497.63739013671875,
-                        279.2160949707031,
-                        1007.3375854492188,
-                        572.4937133789062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hawker-hurricane-rss-03l.jpg.png",
@@ -5446,21 +2285,7 @@
     },
     {
         "image_name": "Hawker_Hurricane.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2722296714782715,
-                "bbox": [
-                    [
-                        74.6443099975586,
-                        202.46072387695312,
-                        926.8831176757812,
-                        681.6234130859375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hawker_Hurricane_Close_up_by_davy59.jpg.jpeg",
@@ -5484,39 +2309,11 @@
     },
     {
         "image_name": "HURR24.01-620x414.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.4390754699707031,
-                "bbox": [
-                    [
-                        70.84622955322266,
-                        50.45440673828125,
-                        533.577880859375,
-                        400.72174072265625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hurricane-cockpit-1-1080x1019.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3264899253845215,
-                "bbox": [
-                    [
-                        0.0,
-                        289.5860900878906,
-                        598.4496459960938,
-                        485.93634033203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hurricane-H-1235x800.jpg.jpeg",
@@ -5528,21 +2325,7 @@
     },
     {
         "image_name": "Hurricane-photo-1-1080x637.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3267449736595154,
-                "bbox": [
-                    [
-                        83.66998291015625,
-                        59.924583435058594,
-                        1045.4766845703125,
-                        637.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "hurricaneiib32dw_1.jpg.jpeg",
@@ -5550,34 +2333,7 @@
     },
     {
         "image_name": "hurricaneiib_hangar11_g-hhii_ott09_02.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.42582207918167114,
-                "bbox": [
-                    [
-                        4.115820407867432,
-                        167.1979522705078,
-                        857.1752319335938,
-                        453.92437744140625
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2712648808956146,
-                "bbox": [
-                    [
-                        37.33417892456055,
-                        204.5027313232422,
-                        1020.1531372070312,
-                        554.6743774414062
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Hurricane_Mk_IIE_BE485_of_RCAF_Squadron_No_402.jpg.jpeg",
@@ -5589,70 +2345,15 @@
     },
     {
         "image_name": "HurriSpit-1200_480.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.39386850595474243,
-                "bbox": [
-                    [
-                        144.14553833007812,
-                        6.701731204986572,
-                        1176.457763671875,
-                        476.93792724609375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Im1958v205-p064bc.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31263914704322815,
-                "bbox": [
-                    [
-                        18.91259002685547,
-                        49.248199462890625,
-                        518.12548828125,
-                        520.33056640625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "image-article169Gallery-fd7876ae-1995643.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2804153263568878,
-                "bbox": [
-                    [
-                        106.20288848876953,
-                        145.49253845214844,
-                        1049.517333984375,
-                        461.7601013183594
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2631150484085083,
-                "bbox": [
-                    [
-                        472.5106506347656,
-                        167.1485595703125,
-                        1050.095458984375,
-                        368.656982421875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "image41.jpeg.jpeg",
@@ -5660,34 +2361,7 @@
     },
     {
         "image_name": "img011b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.39860987663269043,
-                "bbox": [
-                    [
-                        1012.6478271484375,
-                        420.38885498046875,
-                        1516.64501953125,
-                        666.8084716796875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3924523591995239,
-                "bbox": [
-                    [
-                        1188.65576171875,
-                        424.2332458496094,
-                        1512.2711181640625,
-                        668.5147094726562
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "IMGP6920-Boeing-Chinook-HC2-352-ZA714-RAF.jpg.jpeg",
@@ -5703,21 +2377,7 @@
     },
     {
         "image_name": "kovozvody-prostejov-clk0012-hawker-hurricane-mkiic-xb9-199806_0.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.36479657888412476,
-                "bbox": [
-                    [
-                        36.47603988647461,
-                        75.25444030761719,
-                        994.2633666992188,
-                        634.9246826171875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "latest.jpeg",
@@ -5725,21 +2385,7 @@
     },
     {
         "image_name": "magrus_220317_6233677b1780b.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3263450264930725,
-                "bbox": [
-                    [
-                        243.4063720703125,
-                        276.7486572265625,
-                        1600.0,
-                        1025.0419921875
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "maxresdefault.jpg.jpeg",
@@ -5767,60 +2413,7 @@
     },
     {
         "image_name": "Mk1_Hawker_Hurricane.jpg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.46247267723083496,
-                "bbox": [
-                    [
-                        63.67314529418945,
-                        88.08697509765625,
-                        989.74755859375,
-                        471.955810546875
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.37909451127052307,
-                "bbox": [
-                    [
-                        7.314306735992432,
-                        210.0731964111328,
-                        498.4412536621094,
-                        460.0043029785156
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3158751428127289,
-                "bbox": [
-                    [
-                        8.63916015625,
-                        208.93154907226562,
-                        697.5785522460938,
-                        463.70538330078125
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3095073401927948,
-                "bbox": [
-                    [
-                        0.0,
-                        174.6306610107422,
-                        929.9183959960938,
-                        473.27587890625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "modart633-171126-5a1b289d755a8-1600x1063.jpg.jpeg",
@@ -5828,21 +2421,7 @@
     },
     {
         "image_name": "nandan-ambure-nandan-ambure-pratik-tisage-chinook-004.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2689777910709381,
-                "bbox": [
-                    [
-                        18.844482421875,
-                        626.6876220703125,
-                        1066.125,
-                        1335.92822265625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "NC10162.jpg.jpeg",
@@ -5850,57 +2429,15 @@
     },
     {
         "image_name": "p08h168k.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3259580135345459,
-                "bbox": [
-                    [
-                        82.47146606445312,
-                        203.28414916992188,
-                        851.4006958007812,
-                        399.1221008300781
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "parked.jpg.f1f1c24a7d8539bbad20eea791c7d792.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.28806403279304504,
-                "bbox": [
-                    [
-                        175.84304809570312,
-                        313.2649230957031,
-                        1537.537353515625,
-                        710.1117553710938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "parked.thumb.jpg.f21361b12652070291599562409b57fe.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.33643558621406555,
-                "bbox": [
-                    [
-                        106.57272338867188,
-                        194.160888671875,
-                        958.331298828125,
-                        440.4511413574219
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "pic10244-1440886037.jpg.jpeg",
@@ -5908,21 +2445,7 @@
     },
     {
         "image_name": "pic10244-1668798499.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3342171311378479,
-                "bbox": [
-                    [
-                        174.47979736328125,
-                        15.5916748046875,
-                        1348.8702392578125,
-                        845.2008056640625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "pic10244-1668798519.jpg.jpeg",
@@ -5930,7 +2453,21 @@
     },
     {
         "image_name": "pic10244-1668798545.jpg.jpeg",
-        "detections": []
+        "detections": [
+            {
+                "class_index": 3,
+                "class_name": "Single Engine",
+                "confidence": 0.34245243668556213,
+                "bbox": [
+                    [
+                        523.3526000976562,
+                        790.3216552734375,
+                        810.0,
+                        1079.650390625
+                    ]
+                ]
+            }
+        ]
     },
     {
         "image_name": "pic10244-1668798582.jpg.jpeg",
@@ -5942,78 +2479,11 @@
     },
     {
         "image_name": "QD32139-Instruction.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6256599426269531,
-                "bbox": [
-                    [
-                        121.12327575683594,
-                        237.2686767578125,
-                        752.4828491210938,
-                        533.14501953125
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.6252433657646179,
-                "bbox": [
-                    [
-                        89.12239074707031,
-                        598.9862060546875,
-                        742.216796875,
-                        1138.81884765625
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.31770846247673035,
-                "bbox": [
-                    [
-                        829.744873046875,
-                        584.0767822265625,
-                        1537.563720703125,
-                        1104.816650390625
-                    ]
-                ]
-            },
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.30014315247535706,
-                "bbox": [
-                    [
-                        825.3890991210938,
-                        45.336647033691406,
-                        1501.663818359375,
-                        552.79345703125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "radialnyi-dvigatel-vint-pilot-raf-hurricane-hawker-hurricane.jpg.webp",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.43778958916664124,
-                "bbox": [
-                    [
-                        181.0433349609375,
-                        34.15058898925781,
-                        1313.0494384765625,
-                        741.7877807617188
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "RAF Chinook Mk 6 Nose Right.jpg.jpeg",
@@ -6037,21 +2507,7 @@
     },
     {
         "image_name": "rcaf_avro_canada_cf_105_arrow_by_panzerbob-d7g9cnd.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.25335997343063354,
-                "bbox": [
-                    [
-                        1622.915283203125,
-                        401.6005554199219,
-                        1792.302734375,
-                        484.77044677734375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "RCAF_Boeing_Chinook_CH-147F_Boeing_image.jpg.jpeg",
@@ -6075,21 +2531,7 @@
     },
     {
         "image_name": "side_right.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.25552213191986084,
-                "bbox": [
-                    [
-                        120.95328521728516,
-                        120.41415405273438,
-                        1179.190185546875,
-                        637.124267578125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Sindlinger-Hawker-Hurricane_Aeropedia-The-Encyclopedia-of-Aircraft.jpg.jpeg",
@@ -6097,57 +2539,15 @@
     },
     {
         "image_name": "soO4dq-UserView-0.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.25634899735450745,
-                "bbox": [
-                    [
-                        159.473388671875,
-                        111.36875915527344,
-                        1111.2872314453125,
-                        620.785400390625
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "Spain-7500-FF.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.5234124660491943,
-                "bbox": [
-                    [
-                        119.69587707519531,
-                        86.93219757080078,
-                        858.1621704101562,
-                        453.5950622558594
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "stock-photo-headcorn-kent-uk-hawker-hurricane-over-kent-1593478369.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.308556467294693,
-                "bbox": [
-                    [
-                        84.14039611816406,
-                        307.24383544921875,
-                        1313.2984619140625,
-                        690.14208984375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "T9eQ1F-UserView-0.png.png",
@@ -6159,21 +2559,7 @@
     },
     {
         "image_name": "tch1ta.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3071635663509369,
-                "bbox": [
-                    [
-                        43.211727142333984,
-                        12.030580520629883,
-                        810.3298950195312,
-                        352.3274841308594
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "tempestv_221228_63abf5d6369d2.jpg.jpeg",
@@ -6193,39 +2579,11 @@
     },
     {
         "image_name": "thumb-1920-419410.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.42121607065200806,
-                "bbox": [
-                    [
-                        288.5233154296875,
-                        0.0,
-                        1920.0,
-                        1200.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "thumb-1920-642374.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.32470008730888367,
-                "bbox": [
-                    [
-                        419.1016845703125,
-                        172.53463745117188,
-                        1386.1015625,
-                        539.41552734375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "thumb-1920-834684.jpg.jpeg",
@@ -6237,96 +2595,15 @@
     },
     {
         "image_name": "tpnWIe.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.4210560917854309,
-                "bbox": [
-                    [
-                        344.8568115234375,
-                        14.596893310546875,
-                        1920.0,
-                        1006.7930908203125
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "tumblr_n7n38fA7i51txx6x7o2_r1_1280.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.2623559534549713,
-                "bbox": [
-                    [
-                        67.8208999633789,
-                        233.501953125,
-                        903.7410278320312,
-                        538.1683959960938
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "tumblr_n7n38fA7i51txx6x7o3_1280.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.6387934684753418,
-                "bbox": [
-                    [
-                        222.23477172851562,
-                        281.8962707519531,
-                        342.5293884277344,
-                        406.4607849121094
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3552415370941162,
-                "bbox": [
-                    [
-                        10.527195930480957,
-                        415.3171691894531,
-                        354.6593017578125,
-                        536.3737182617188
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.3353826403617859,
-                "bbox": [
-                    [
-                        5.593005657196045,
-                        402.65374755859375,
-                        489.068603515625,
-                        535.3984375
-                    ]
-                ]
-            },
-            {
-                "class_index": 1,
-                "class_name": "Jet",
-                "confidence": 0.2740134596824646,
-                "bbox": [
-                    [
-                        9.22177791595459,
-                        283.8406677246094,
-                        472.69195556640625,
-                        537.0
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "tumblr_njmxfpHeZ61r2cg2xo1_1280.jpg.jpeg",
@@ -6334,39 +2611,11 @@
     },
     {
         "image_name": "UK-Mk+IV+Hawker+Hurricane.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.3624809980392456,
-                "bbox": [
-                    [
-                        60.51123046875,
-                        274.30133056640625,
-                        1244.95458984375,
-                        850.6100463867188
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "UserView-1.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.6463481783866882,
-                "bbox": [
-                    [
-                        438.35479736328125,
-                        264.6545715332031,
-                        1412.9608154296875,
-                        945.876708984375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "VABAHZRPKNN6FKGX6DWLEPQRKA.jpg.jpeg",
@@ -6406,21 +2655,7 @@
     },
     {
         "image_name": "zh893-royal-air-force-boeing-chinook-hc2a_PlanespottersNet_1395666_4a96e5bc13_o.jpg.jpeg",
-        "detections": [
-            {
-                "class_index": 3,
-                "class_name": "Single Engine",
-                "confidence": 0.38002368807792664,
-                "bbox": [
-                    [
-                        57.03203201293945,
-                        19.914844512939453,
-                        2048.0,
-                        1107.4720458984375
-                    ]
-                ]
-            }
-        ]
+        "detections": []
     },
     {
         "image_name": "zh897-royal-air-force-boeing-chinook-hc5_PlanespottersNet_1384969_a7c8aedcb1_o.jpg.jpeg",

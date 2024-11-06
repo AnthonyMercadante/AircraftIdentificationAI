@@ -150,6 +150,6 @@ def test_yolo_model(model_path, images_folder, config_file=None):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-      #train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-     test_yolo_model('runs/detect/train12/weights/best.pt', 'dataset/unseen_images', 'test-config.yaml')
+    # train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+    test_yolo_model('runs/detect/train13/weights/best.pt', 'dataset/unseen_images', 'test-config.yaml')
     
