@@ -32,7 +32,7 @@ def train_yolo_model():
     # Loads a YOLO model defined in 'yolov8n.yaml'.
     # This YAML file should contain the model architecture. You need to specify the correct path
     # and filename according to your model configuration.
-    model = YOLO("runs/detect/train4/weights/best.pt")  # Build a new model from scratch
+    model = YOLO("runs/detect/train14/weights/best.pt")  # Build a new model from scratch
 
     # Model Training
     # Starts the training process of the model using the data and configuration specified in 'config.yaml'.
@@ -150,6 +150,6 @@ def test_yolo_model(model_path, images_folder, config_file=None):
 # This is a standard Python practice to ensure that the script runs only when it is executed directly,
 # not when imported as a module in another script.
 if __name__ == '__main__':
-    # train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
-    test_yolo_model('runs/detect/train13/weights/best.pt', 'dataset/unseen_images', 'test-config.yaml')
+    #train_yolo_model() # <-- FOR TRAINING THE MODEL ONLY
+    test_yolo_model('runs/detect/train16/weights/best.pt', 'dataset/images', 'test-config.yaml')\
     
