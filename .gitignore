@@ -7223,3 +7223,5 @@ split_dataset/val/images/fc45006c825e44eb.jpg
 AircraftIdentificationAI.pth
 /split_dataset
 /split_dataset/test/images
+/Classifications
+/dataset
