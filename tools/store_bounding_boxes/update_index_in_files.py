@@ -37,5 +37,5 @@ def update_index_in_files(folder_path, new_index=3):
                         file.write(' '.join(parts) + '\n')
 
 # Example usage
-folder_path = 'output_images/labels'
+folder_path = 'output_images final single engine/labels'
 update_index_in_files(folder_path)
