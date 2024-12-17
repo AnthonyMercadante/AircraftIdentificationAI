@@ -7225,3 +7225,18 @@ AircraftIdentificationAI.pth
 /split_dataset/test/images
 /Classifications
 /dataset
+/tools/store_bounding_boxes/output_images final single engine/labels
+/tools/store_bounding_boxes/output_images final single engine
+/dataset/images
+/dataset
+/tools/store_bounding_boxes/output_images final multi engine
+/tools/store_bounding_boxes/output_images final multi engine/labels
+/tools/store_bounding_boxes/output_images final jet/labels
+/tools/store_bounding_boxes/output_images final jet
+/tools/store_bounding_boxes/output_images (single engine)/labels
+/tools/store_bounding_boxes/output_images (single engine)
+/tools/store_bounding_boxes/output_images (Single Engine Planes)/labels
+/tools/store_bounding_boxes/output_images (Single Engine Planes)
+/tools/store_bounding_boxes/output_images (Single Engine Planes)/labels
+/tools/store_bounding_boxes/output_images (Single Engine Planes)
+/tools/store_bounding_boxes
