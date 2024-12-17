@@ -1,4 +1,0 @@
-Average confidence per class:
-  Single Engine: 0.34
-  Jet: 0.28
-  Multi Engine: 0.32

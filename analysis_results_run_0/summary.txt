@@ -1,7 +1,0 @@
-Total images processed: 649
-Images with detections: 195
-Images without detections: 454
-Total detections: 280
-Detections per class:
-  Jet: 167
-  Single Engine: 113

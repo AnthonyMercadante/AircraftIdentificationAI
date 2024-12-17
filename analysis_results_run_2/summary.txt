@@ -1,6 +1,0 @@
-Total images processed: 649
-Images with detections: 15
-Images without detections: 634
-Total detections: 15
-Detections per class:
-  Aircraft: 15
