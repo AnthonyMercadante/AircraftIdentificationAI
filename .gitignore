@@ -7240,3 +7240,6 @@ AircraftIdentificationAI.pth
 /tools/store_bounding_boxes/output_images (Single Engine Planes)/labels
 /tools/store_bounding_boxes/output_images (Single Engine Planes)
 /tools/store_bounding_boxes
+/dataset/images
+/dataset
+/dataset/images
